@@ -54,7 +54,7 @@ In this task, you'll learn to create a GitHub repository.
 
       ![The `New Repository` creation form in GitHub.](../media/2dg122.png "New Repository Creation Form")
 
-   - To confirm your decision, copy the **repository name** **(1)** available in the `{github-username}/github-action` pop-up. Paste it in the **box** **(2)**, and click on the I understand the consequences, **Delete this repository** **(3)** option.
+   - To confirm your decision, copy the **repository name** **(1)** available in the `{github-username}/github-action` pop-up. Paste it in the **box** **(2)**, and click on  **Delete this repository** **(3)** option.
 
       ![The `New Repository` creation form in GitHub.](../media/2dg123.png "New Repository Creation Form")
 
@@ -161,11 +161,11 @@ When the workflow runs:
 
     ![](../media/env42.png)
 
-1. Click on **Actions** **(1)**, once the workflow got succedded click on Workflow **hello-action.yml** **(2)**.
+1. Click on **Actions** **(1)**, once the workflow got succedded click on Workflow: **hello-action.yml** **(2)**.
 
    ![](../media/hello-action-trigger.png)
 
-1. Click on the action and select **build**. You can see the steps and output.
+1. Click on the **build** option under Jobs. You can see the steps and output. .
 
     ![](../media/env22.png)
 

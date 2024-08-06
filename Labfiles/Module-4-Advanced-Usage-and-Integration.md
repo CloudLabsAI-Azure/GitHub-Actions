@@ -56,7 +56,7 @@ OpenID Connect (OIDC) allows your GitHub Actions workflows to access resources i
 
 1. Click on the **Action** **(1)** option. Verify if the workflow has been executed successfully **(2)**.
 
-   ![](../media/workflow-oidc.png)
+   ![](../media/workflow-oidc1.png)
 
    >**Note**: 
 This GitHub Actions workflow demonstrates the best practice of securely using Azure secrets by employing GitHub Secrets. The workflow, triggered on every push, runs on ubuntu-latest and performs several steps, including logging into Azure with a service principal secret, executing an Azure CLI script, and running an Azure PowerShell script.
@@ -95,11 +95,11 @@ In this task, you'll analyze and resolve an error with the workflow.
 
 4. In the **Commit changes** pop-up window, click on the **Commit changes** option.
 
-5. Click on the **Action** tab. Verify if the workflow has Failed, and click on the **Create issue-check-debug.yml** workflow.
+5. Click on the **Action** tab. Verify if the workflow has Failed, and click on the **Create deploy-to-azure.yml** workflow.
 
-   ![](../media/action-issue-check_1.png)
+   ![](../media/action-issue-check_1(1).png)
 
-6. Click on **build** **(1)**, expand **Install Dependency** **(2)**, and you'll see the error that `npm ERR! enoent ENOENT: no such file or directory, open 'Run bash ./missing-script.sh bash: ./missing-script.sh: No such file or directory` **(3)**.
+6. Click on **build** **(1)**, expand **Run missing Script** **(2)**, and you'll see the error that `npm ERR! enoent ENOENT: no such file or directory, open 'Run bash ./missing-script.sh bash: ./missing-script.sh: No such file or directory` **(3)**.
 
    ![](../media/issue-file.png)
 
@@ -120,9 +120,9 @@ In this task, you'll analyze and resolve an error with the workflow.
 
     ![](../media/issue-fixed.png)
 
-11. Click on **Build** **(1)**, expand **Install Dependency** **(2)**
+11. Click on **Build** **(1)**, expand **Run missing script** **(2)**
 
-    ![](../media/issue-fixed-result.png)
+    ![](../media/issue-fixed-result1.png)
 
     >**Note**: You just resolved an issue by creating the missing PowerShell script and triggering the workflow.
 

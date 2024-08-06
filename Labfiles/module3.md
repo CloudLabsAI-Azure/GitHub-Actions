@@ -114,7 +114,7 @@ In this task, you'll fork a public repository and create a GitHub action using M
 
    - Click on the **Settings** tab from the GitHub homepage.
 
-     ![](../media/env47.png)
+     ![](../media/env47(2).png)
 
    - In the **Settings** page, scroll to the bottom and select **Delete this repository**.
 
@@ -122,7 +122,6 @@ In this task, you'll fork a public repository and create a GitHub action using M
 
    - Accept all the warning prompts. In the delete `{github-username}/sample-node-project` pop-up, copy the **repository name** **(1)** and paste it in the **box** **(2)** to confirm your decision. Finally, click on the I understand the consequences, **Delete this repository** **(3)** option.
 
-     ![](../media/env47.png)
 
    - Navigate back to **step 1** and try to fork the repository again. 
 
@@ -135,8 +134,6 @@ In this task, you'll fork a public repository and create a GitHub action using M
    ![](../media/newaction.png)
 
 1. Include the file name as **nodejs_ci.yml** **(1)**. In the editor, **copy and paste** **(2)** the below script, and click on the **Commit changes** **(3)** option.
-
-    ![](../media/optimize2.png)
 
     ```
     name: Node.js CI
@@ -187,7 +184,7 @@ In this task, you'll fork a public repository and create a GitHub action using M
 
 1. Click on the **Actions** **(1)** tab. Verify the workflow has been executed successfully by looking for the green badge. Select the newly created workflow, **nodejs_ci.yml** **(2)**.
 
-    ![](../media/optimize4.png)
+    ![](../media/optimize4(1).png)
 
     > **Note:** This GitHub Actions workflow, named "Node.js CI," is triggered by pushes to the main branch affecting the **.github/workflows/nodejs_ci.yml** file. It sets up a job that runs on an Ubuntu environment and utilizes a matrix strategy to specify Node.js version 18.x. The workflow includes steps to check out the repository, cache Node.js dependencies to optimize workflow performance, and set up the specified Node.js version using the actions/setup-node action.
 
@@ -374,7 +371,7 @@ Optimizing workflow performance by caching dependencies can significantly improv
 
     ![](../media/optimize2.png)
 
-3. Replace the following code with the below code.
+3. Replace the following code with the below code,and click on **Commit Changes**.
 
     ```
     name: Node.js CI
@@ -469,7 +466,7 @@ Optimizing workflow performance by caching dependencies can significantly improv
 
 1. Go to **Developer settings** -> **Personal access tokens** -> **Tokens (classic) (1)**, and then click on **Generate new token (2)** option at the top. Now select **Generate new token (classic) (3)**.
 
-    ![Picture1](../media/generate_new_2.png)
+    ![Picture1](../media/generate_new_2(2).png)
 
 1. From here, give your secret a name, such as **Secret scanning**, set the **Expiration** to **_"Custom..."_** and select the next calendar day. By default, no permissions are granted, so it is safe to scroll to the bottom and click on **Generate token**.
 

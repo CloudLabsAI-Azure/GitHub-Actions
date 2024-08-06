@@ -20,7 +20,7 @@ Securing sensitive data like API keys and credentials is crucial to protecting y
 
     - **Subscription**: Select the default subscription.
     - **Resource Group**: Select **github-action-xxxx<inject key="DeploymentID" enableCopy="false"/>** **(1)**
-    - **Registry Name**: Enter **gacontiner<inject key="DeploymentID" enableCopy="false"/>** **(2)**
+    - **Registry Name**: Enter **gacontainer<inject key="DeploymentID" enableCopy="false"/>** **(2)**
     - **Location**: Select the default **location.** **(3)**
     - **Pricing Plan**: Choose **Standard** **(4)**
     -  Click on the **Review + create** **(5)** option.
@@ -234,7 +234,7 @@ Securing sensitive data like API keys and credentials is crucial to protecting y
 
     ![](../media/21-06-2024(10).png)
 
-1. Provide the file name as **docker.yml (1)**. In the editor, **copy and paste (2)** the script below, then click on **Commit changes (3).**
+1. Provide the file name as **docker.yml (1)**. In the editor, **review(2)** the script present, then click on **Commit changes (3).**
 
    ![](../media/21-06-2024(11).png)
    
