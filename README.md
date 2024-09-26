@@ -1,6 +1,6 @@
-# GitHub Actions Hands-On Lab
+# Advanced Workflow Automation with GitHub Actions Hands-On Lab
 
-Welcome to the GitHub Actions Workshop! This workshop is designed to help you understand and implement GitHub Actions effectively in your projects. Whether you're new to GitHub Actions or looking to enhance your existing knowledge, this workshop covers a range of topics to get you started and take your workflows to the next level.
+Welcome to the Advanced Workflow Automation with GitHub Actions Workshop! This workshop is designed to help you understand and implement GitHub Actions effectively in your projects. Whether you're new to GitHub Actions or looking to enhance your existing knowledge, this workshop covers a range of topics to get you started and take your workflows to the next level.
 
 ## Table of Contents
 
