@@ -4,39 +4,39 @@
     "Language": "English",
     "Files": [
       {
-        "RawFilePath": "https://raw.githubusercontent.com/NIREEKSHITH45/GitHub-Actions/main/Labfiles/gettingstarted.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/GitHub-Actions/main/Labfiles/gettingstarted.md",
         "Order": 1
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/NIREEKSHITH45/GitHub-Actions/main/README.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/GitHub-Actions/main/README.md",
         "Order": 2
       },
        {
-        "RawFilePath": "https://raw.githubusercontent.com/NIREEKSHITH45/GitHub-Actions/main/Labfiles/intro-to-github.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/GitHub-Actions/main/Labfiles/intro-to-github.md",
         "Order": 3
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/NIREEKSHITH45/GitHub-Actions/main/Labfiles/Module-1-Workflow-Setup.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/GitHub-Actions/main/Labfiles/Module-1-Workflow-Setup.md",
         "Order": 4
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/NIREEKSHITH45/GitHub-Actions/main/Labfiles/module2.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/GitHub-Actions/main/Labfiles/module2.md",
         "Order": 5
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/NIREEKSHITH45/GitHub-Actions/main/Labfiles/module3.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/GitHub-Actions/main/Labfiles/module3.md",
         "Order": 6
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/NIREEKSHITH45/GitHub-Actions/main/Labfiles/create-environment.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/GitHub-Actions/main/Labfiles/create-environment.md",
         "Order": 7
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/NIREEKSHITH45/GitHub-Actions/main/Labfiles/Module-4-Advanced-Usage-and-Integration.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/GitHub-Actions/main/Labfiles/Module-4-Advanced-Usage-and-Integration.md",
         "Order": 8
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/NIREEKSHITH45/GitHub-Actions/main/Labfiles/Integrating-with-Azure-DevOps.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/GitHub-Actions/main/Labfiles/Integrating-with-Azure-DevOps.md",
         "Order": 9
       }
     ]
