@@ -428,7 +428,7 @@ Optimizing workflow performance by caching dependencies can significantly improv
 
 ### Task 5: Code Scanning and Vulnerability Detection
 
-1. Navigate back to the `github-action` repo from the GitHub repository.
+1. Navigate back to the `github-action` repository.
 
 1. Click on the **Security** **(1)** option, and select **Enable vulnerability reporting** **(2)** next to the **Private vulnerability reporting** option.
 
@@ -495,7 +495,7 @@ Optimizing workflow performance by caching dependencies can significantly improv
 
    ![](../media/21-06-2024(6).png)
 
-1. Navigate to the **Code** **(1)** option from the top navigation pane, click on the **<> Code** drop-down **(2)**, select **Local** **(3)**, and copy the **Repo URL** **(4)**.
+1. Navigate back to the `github-action` repository, click on **Code** **(1)** option from the top navigation pane, click on the **<> Code** drop-down **(2)**, select **Local** **(3)**, and copy the **Repo URL** **(4)**. Paste it in a notepad.
 
    ![](../media/21-06-2024(25).png)
 
@@ -562,3 +562,5 @@ Optimizing workflow performance by caching dependencies can significantly improv
 ### Summary
 
 In this lab, you learned about reusable workflows and matrix builds.
+
+### You have successfully completed the lab!
