@@ -3,10 +3,23 @@
 ### Overall Estimated Duration: 8 Hours
 ## Overview
 
+This hands-on lab provides a comprehensive introduction to GitHub Actions, guiding you through essential workflow automation techniques. It covers workflow setup, including triggers, jobs, and CI workflows, followed by action integration using both pre-built and custom actions. Participants will explore GitHub Environments for managing deployment stages securely and dive into advanced workflows focusing on secure coding, CI/CD, and best practices. The lab also introduces OpenID Connect (OIDC) for secure Azure integration and demonstrates GitHub-Azure DevOps integration to streamline project management, automate work item tracking, and enhance collaboration.
 
 ## Objectives
 
+- **Getting Started with GitHub (Optional: Read-Only)**
+- **Workflow Setup**
+- **Action Integration**
+- **Advanced Workflows**
+- **GitHub Environment**
+- **Security and Best Practices**
+- **Integrating with Azure DevOps**
+
 ## Prerequisites
+
+- Basic GitHub Knowledge
+- Fundamentals of CI/CD
+- Version Control Concepts
 
 ## Getting Started with the Lab
 
@@ -57,3 +70,19 @@
 1. Once redirected to the **github-action-xxxx<inject key="DeploymentID" enableCopy="false"/>** resource group, verify the resources present in it.
 
    ![](../media/rgname.png)
+
+## Support Contact
+The CloudLabs support team is available 24/7, 365 days a year, via email and live chat to ensure seamless assistance at any time. We offer dedicated support channels tailored specifically for both learners and instructors, ensuring that all your needs are promptly and efficiently addressed.
+
+Learner Support Contacts:
+
+   - Email Support: cloudlabs-support@spektrasystems.com
+   - Live Chat Support: https://cloudlabs.ai/labs-support
+
+Now you're all set to explore the powerful world of technology. Feel free to reach out if you have any questions along the way. Enjoy your workshop!
+
+Now, click on **Next** from the lower right corner to move on to the next page.
+
+  ![Asklater](images/num.png)
+
+## Happy Learning!!
