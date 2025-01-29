@@ -261,11 +261,8 @@ In GitHub Actions workflows, you define jobs and steps to orchestrate the tasks 
 
     > **Note:** This GitHub Actions workflow named "My Workflow" triggers on pushes and pull requests to the main branch, specifically for changes to the **.github/workflows/jobs.yml** file, and can also be manually triggered **(workflow_dispatch)**. It consists of two jobs: **job1**, which checks out the repository and runs a script printing "Hello, world!", and **job2**, dependent on **job1**, which checks out the repository again and runs another script printing "Hello, again!" sequentially on an Ubuntu environment.
 
-1. Click on the **Next** button to proceed to the next lab.
-
 ## Summary
 
 In this lab, you've successfully set up our workflow. You've also created and executed a workflow, verified its successful execution, and familiarized yourself with the jobs within it. This foundational knowledge will be instrumental as we progress through the subsequent labs.
-
 
 ### You have successfully completed the lab!
