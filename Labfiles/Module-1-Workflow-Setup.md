@@ -1,16 +1,25 @@
 # Lab 1: Workflow Setup 
 
-## Task 1: Create the Project Repo
+## Overview
 
 A GitHub repository (repo) is a central location where the files for a project are stored and managed using Git, a version control system. A repository contains all the project's files, including code, documentation, and other assets, along with a history of all changes made to those files.
 
+## Lab Objectives
+
+- Task 1: Create the Project Repo
+- Task 2: Introduction to GitHub Actions
+- Task 3: Create a Custom Workflow with Multiple Jobs
+
+
+### Task 1: Create the Project Repo
+
 In this task, you'll learn to create a GitHub repository.
 
-1. In the labvm-<inject key="DeploymentID" enableCopy="false"/>, open a new browser tab and navigate to the GitHub login page at ```https://www.github.com/login```. From **Environment Details** page **(1)**, navigate to the **Licenses** **(2)** tab and **copy** **(3)** the credentials. Use the same username and password to log into GitHub.
+1. Select **Microsoft Edge** from the desktop, open a new browser tab and navigate to the GitHub login page at ```https://www.github.com/login```. From **Environment Details** page **(1)**, navigate to the **Licenses** **(2)** tab and **copy** **(3)** the credentials. Use the same username and password to log into GitHub.
 
    ![](../media/dev2.png) 
 
-1. To retrieve the **Device Verification Code**, use your existing credentials. Begin by opening a private browsing window and navigating to ```http://outlook.office.com/.``` Enter the same username and password you used to log into your GitHub account. Once logged in, locate the **verification code** displayed on the screen. **Copy** this code and then **paste** it into the **Device Verification** section where prompted. This ensures you can securely complete the device verification process using the credentials associated with your GitHub account.
+1. To retrieve the **Device Verification Code**, use your existing credentials. Begin by opening a private browsing window and navigating to ```http://outlook.office.com/``` Enter the same username and password you used to log into your GitHub account. Once logged in, locate the **verification code** displayed on the screen. **Copy** this code and then **paste** it into the **Device Verification** section where prompted. This ensures you can securely complete the device verification process using the credentials associated with your GitHub account.
 
    ![](../media/2dgn154.png) 
 
@@ -161,7 +170,7 @@ When the workflow runs:
 
     ![](../media/env42.png)
 
-1. Click on **Actions** **(1)**, once the workflow got succedded click on Workflow: **hello-action.yml** **(2)**.
+1. Click on **Actions** **(1)**, once the workflow is succeeded, click on Workflow: **Create hello-action.yml** **(2)**.
 
    ![](../media/hello-action-trigger.png)
 
@@ -183,7 +192,7 @@ In GitHub Actions workflows, you define jobs and steps to orchestrate the tasks 
 
     ![](../media/editfolder.png)
 
-1. In the **.github/workflows** folder, click on **Add files** **(1)** and select the **+ Create new file** **(2)** option.
+1. In the **.github/workflows** folder, click on **Add file** **(1)** and select the **+ Create new file** **(2)** option.
 
     ![](../media/4th-oidc.png)
 
@@ -257,3 +266,6 @@ In GitHub Actions workflows, you define jobs and steps to orchestrate the tasks 
 ## Summary
 
 In this lab, you've successfully set up our workflow. You've also created and executed a workflow, verified its successful execution, and familiarized yourself with the jobs within it. This foundational knowledge will be instrumental as we progress through the subsequent labs.
+
+
+### You have successfully completed the lab!
