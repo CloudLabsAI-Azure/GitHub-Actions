@@ -1,8 +1,15 @@
 # Lab 2: Action Integration
 
+## Overview
+
 Integrating Azure with GitHub Actions provides a seamless and efficient way to automate your workflows and deploy applications directly to Azure from your GitHub repository. GitHub Actions, a powerful automation tool, enables continuous integration and continuous deployment (CI/CD) pipelines, allowing you to build, test, and deploy your code with ease.
 
->**Note**: For the purpose of this demo, we are using the main branch directly. However, it is important to follow best practices in a production environment by not committing changes directly to the main branch.
+   > **Note**: For the purpose of this demo, we are using the main branch directly. However, it is important to follow best practices in a production environment by not committing changes directly to the main branch.
+
+## Lab Objectives
+
+- Task 1: Using GitHub Actions with Azure Container Registries with Secret Variables in Workflows
+- Task 2: Conditional Execution Using If Expressions
 
 ### Task 1: Using GitHub Actions with Azure Container Registries with Secret Variables in Workflows 
 
@@ -19,7 +26,7 @@ Securing sensitive data like API keys and credentials is crucial to protecting y
 1. Under the **basics** tab, add the following details:
 
     - **Subscription**: Select the default subscription.
-    - **Resource Group**: Select **github-action-xxxx<inject key="DeploymentID" enableCopy="false"/>** **(1)**
+    - **Resource Group**: Select **github-action-<inject key="DeploymentID" enableCopy="false"/>** **(1)**
     - **Registry Name**: Enter **gacontainer<inject key="DeploymentID" enableCopy="false"/>** **(2)**
     - **Location**: Select the default **location.** **(3)**
     - **Pricing Plan**: Choose **Standard** **(4)**
@@ -252,7 +259,7 @@ Securing sensitive data like API keys and credentials is crucial to protecting y
 
    ![](../media/17-06-2024(1).png)
 
-1. Select **gacontainerxxxx<inject key="DeploymentID" enableCopy="false"/>** from the list.
+1. Select **gacontainer<inject key="DeploymentID" enableCopy="false"/>** from the list.
 
    ![](../media/env43.png)
 
@@ -335,8 +342,8 @@ One of the key features that make GitHub Actions flexible and robust is the abil
    
    >**Note**: This GitHub Actions workflow, named "Complex Workflow," triggers push and pull request events to the main branch when the .github/workflows/conditional.yml file is modified. It includes two jobs: job1, which checks out the repository and runs a simple script, and job2, which runs only if job1 is successful and the event is a push, checking out the repository again and running a different script.
 
-1. Click on the **Next** button to proceed to the next lab.
-
 ### Summary
 
 In this lab, you've learned about integrating Azure with GitHub Actions and using "if expressions" in GitHub Actions.
+
+### You have successfully completed the lab
