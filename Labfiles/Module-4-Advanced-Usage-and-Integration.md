@@ -1,20 +1,25 @@
 # Lab 5: Security and Best Practices
 
+## Lab Objectives
+
+- Task 1: OIDC to Securely Connect to the Cloud
+- 
+
 ### Task 1: OIDC to Securely Connect to the Cloud
 
 OpenID Connect (OIDC) allows your GitHub Actions workflows to access resources in Azure without needing to store the Azure credentials as long-lived GitHub secrets. This gives an overview of how to configure Azure to trust GitHub's OIDC as a federated identity and includes a workflow example for the Azure/Login action that uses tokens to authenticate to Azure and access resources.
 
-1. Navigate back to the `github-action` repo from the GitHub repository. You'll use the `AZURE_CREDENTIALS` that you created in the earlier lab.
+1. Navigate back to the `github-action` repository. 
 
 1. Navigate to the **Code** **(1)** option and click on the **.github/workflows** **(2)** folder.
 
    ![](../media/4th-oidc-click.png)
 
-1. In the **.github/workflows** folder, click on **Add files** **(1)**, and select **+ Create new file** **(2)**.
+1. In the **.github/workflows** folder, click on **Add file** **(1)**, and select **+ Create new file** **(2)**.
 
    ![](../media/4th-oidc.png)
 
-1. Provide the file name as **OIDC_action.yml** **(1)**. In the editor, **copy and paste** **(2)** the below script, and click on **commit changes** **(3)**.
+1. Provide the file name as **OIDC_action.yml** **(1)**. In the editor, **copy and paste** **(2)** the below script, and click on **Commit changes** **(3)**.
 
     ```
     # File: .github/workflows/workflow.yml 
@@ -54,7 +59,9 @@ OpenID Connect (OIDC) allows your GitHub Actions workflows to access resources i
               Get-AzContext
     ```
 
-1. Click on the **Action** **(1)** option. Verify if the workflow has been executed successfully **(2)**.
+1. In the **Commit changes** pop-up, click on the **Commit changes** button.
+
+1. Click on the **Actions** **(1)** tab. Verify if the workflow has been executed successfully **(2)**.
 
    ![](../media/workflow-oidc1.png)
 
@@ -71,7 +78,7 @@ In this task, you'll analyze and resolve an error with the workflow.
 
    ![](../media/4th-oidc-click.png)
 
-2. In the **.github/workflows** folder, click on **Add files** **(1)**, and select the **+ Create new file** **(2)** option.
+2. In the **.github/workflows** folder, click on **Add file** **(1)**, and select the **+ Create new file** **(2)** option.
 
    ![](../media/4th-oidc.png)
 
