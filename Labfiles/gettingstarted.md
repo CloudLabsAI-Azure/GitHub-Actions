@@ -7,8 +7,7 @@ This hands-on lab provides a comprehensive introduction to GitHub Actions, guidi
 
 ## Objectives
 
-- **Getting Started with GitHub (Optional: Read-Only)**
-- **Workflow Setup**
+- **Workflow Setup** : 
 - **Action Integration**
 - **Advanced Workflows**
 - **GitHub Environment**
@@ -17,9 +16,9 @@ This hands-on lab provides a comprehensive introduction to GitHub Actions, guidi
 
 ## Prerequisites
 
-- Basic GitHub Knowledge
-- Fundamentals of CI/CD
-- Version Control Concepts
+- Familiarity with repositories, branches, pull requests, and commits.
+- Awareness of continuous integration and deployment principles.
+- Understanding of Git workflows and version control best practices.
 
 ## Getting Started with the Lab
 
