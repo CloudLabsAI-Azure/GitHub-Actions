@@ -1,3 +1,25 @@
+# Advanced Workflow Automation with GitHub Actions
+
+### Overall Estimated Duration: 8 Hours
+## Overview
+
+This hands-on lab provides a comprehensive introduction to GitHub Actions, guiding you through essential workflow automation techniques. It covers workflow setup, including triggers, jobs, and CI workflows, followed by action integration using both pre-built and custom actions. Participants will explore GitHub Environments for managing deployment stages securely and dive into advanced workflows focusing on secure coding, CI/CD, and best practices. The lab also introduces OpenID Connect (OIDC) for secure Azure integration and demonstrates GitHub-Azure DevOps integration to streamline project management, automate work item tracking, and enhance collaboration.
+
+## Objectives
+
+- **Workflow Setup** : 
+- **Action Integration**
+- **Advanced Workflows**
+- **GitHub Environment**
+- **Security and Best Practices**
+- **Integrating with Azure DevOps**
+
+## Prerequisites
+
+- Familiarity with repositories, branches, pull requests, and commits.
+- Awareness of continuous integration and deployment principles.
+- Understanding of Git workflows and version control best practices.
+
 ## Getting Started with the Lab
 
 1. After the environment has been set up, your browser will load a virtual machine (JumpVM). Use this virtual machine throughout the workshop to perform the lab. You can see the number on the bottom of the lab guide to switch to different exercises in the lab guide.
@@ -9,6 +31,18 @@
     ![](../media/gettingstartedpagenew2-v2.png)
    
    > Check out the **SUFFIX** value on the **Environment** tab. Use it wherever you see **SUFFIX** or **DeploymentID** in lab steps.
+
+## Lab Validation
+
+1. After completing the task, hit the **Validate** button under Validation tab integrated within your lab guide. If you receive a success message, you can proceed to the next task, if not, carefully read the error message and retry the step, following the instructions in the lab guide.
+
+   ![Inline Validation](images/new-get-start-25-5.png)
+
+## Lab Guide Zoom In/Zoom Out
+ 
+1. To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
+
+     ![OpenAI](images/new-get-start-25-6.png)
  
 ## Login to the Azure Portal
 
@@ -47,3 +81,19 @@
 1. Once redirected to the **github-action-xxxx<inject key="DeploymentID" enableCopy="false"/>** resource group, verify the resources present in it.
 
    ![](../media/rgname.png)
+
+## Support Contact
+The CloudLabs support team is available 24/7, 365 days a year, via email and live chat to ensure seamless assistance at any time. We offer dedicated support channels tailored specifically for both learners and instructors, ensuring that all your needs are promptly and efficiently addressed.
+
+Learner Support Contacts:
+
+   - Email Support: cloudlabs-support@spektrasystems.com
+   - Live Chat Support: https://cloudlabs.ai/labs-support
+
+Now you're all set to explore the powerful world of technology. Feel free to reach out if you have any questions along the way. Enjoy your workshop!
+
+Now, click on **Next** from the lower right corner to move on to the next page.
+
+  ![Asklater](images/num.png)
+
+## Happy Learning!!

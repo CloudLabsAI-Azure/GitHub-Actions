@@ -1,10 +1,16 @@
 # Lab 4: GitHub Environment
 
+## Overview
+
 GitHub environments are a feature in GitHub Actions that allow you to define and manage different deployment environments, such as development, staging, and production. Environments can include protection rules like required reviewers, wait times, and environment-specific secrets to enhance security and control. This feature helps ensure that deployments are carried out in a controlled and consistent manner, providing safeguards and configurable policies for each stage of your deployment process.
 
 In this exercise, you'll learn how to set up environments with protection rules, wait timers, environment secrets, and variables. A workflow job that references an environment must adhere to these protection rules before it can run or access the environment's secrets.
 
-## Task 1: Set up Environment
+## Lab Objectives
+
+- Task 1: Set up Environment
+
+### Task 1: Set up Environment
 
 In this task, you'll set up a GitHub environment and use it as a GitHub action.
 
@@ -167,3 +173,4 @@ In this task, you'll set up a GitHub environment and use it as a GitHub action.
 
 In this lab, you learned about setting up a GitHub Environment and verified using a Reviewer account, a Wait timer, Environment variables, and secrets.
 
+### You have successfully completed the lab!

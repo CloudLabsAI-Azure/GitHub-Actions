@@ -1,16 +1,26 @@
 # Lab 3: Advanced Workflows
 
+## Overview
+
 In this lab, you'll learn about reusable workflows and matrix builds.
+
+## Lab Objectives
+
+- Task 1: Using Reusable Workflow
+- Task 2: Explanation and Usage of Matrix Builds
+- Task 3: Matrix Builds for Testing Across Multiple Environments
+- Task 4: Using Artifacts and Dependencies in Workflows
+- Task 5: Code Scanning and Vulnerability Detection
 
 ## Task 1: Using Reusable Workflow
 
 Rather than copying and pasting from one workflow to another, you can make workflows reusable. You and anyone with access to the reusable workflow can then call the reusable workflow from another workflow. Reusing workflows avoids duplication. This makes workflows easier to maintain and allows you to create new workflows more quickly by building on the work of others, just as you do with actions. Workflow reuse also promotes best practices by helping you use workflows that are well-designed, have already been tested, and have been proven to be effective. Your organization can build up a library of reusable workflows that can be centrally maintained. For more information, please go through the given link on [reusing workflows](https://docs.github.com/en/actions/using-workflows/reusing-workflows).
 
-1. From GitHub, navigate to the **.github/workflows** folder, click on **Add files** **(1)**, and select the **+ Create new file** **(2)** option.
+1. From the **gitHub-action** repository, navigate to the **.github/workflows** folder, click on **Add file** **(1)**, and select the **+ Create new file** **(2)** option.
 
     ![](../media/4th-oidc.png)
 
-1. Copy the code given below, paste it in the window, and name the file **reusable-print-message.yml**.
+1. Copy the code given below, **paste (1)** it in the window name the file as **reusable-print-message.yml (2)** and click on **Commit changes (3)**.
 
    ```
    # This GitHub Actions workflow template is designed as a reusable component for printing a message.
@@ -102,28 +112,27 @@ In this task, you'll fork a public repository and create a GitHub action using M
 
    ![](../media/21-06-2024(1).png)
 
-   >**Note**: If a fork already exists, follow the below steps to delete the repository.
+   > **Note**: If a fork already exists, follow the below steps to delete the repository.
 
    - In the upper-right corner, navigate to the user menu and select **Your repositories** **(1)**.
    
      ![The `New Repository` creation form in GitHub.](../media/my_repos.png "New Repository Creation Form")
 
-   - Select ```sample-node-project``` from the list.
+       - Select ```sample-node-project``` from the list.
     
-     ![](../media/env46.png)
+           ![](../media/env46.png)
 
-   - Click on the **Settings** tab from the GitHub homepage.
+       - Click on the **Settings** tab from the GitHub homepage.
 
-     ![](../media/env47(2).png)
+           ![](../media/env47(2).png)
 
-   - In the **Settings** page, scroll to the bottom and select **Delete this repository**.
+       - In the **Settings** page, scroll to the bottom and select **Delete this repository**.
 
-     ![The `New Repository` creation form in GitHub.](../media/2dg120.png "New Repository Creation Form")
+           ![The `New Repository` creation form in GitHub.](../media/2dg120.png "New Repository Creation Form")
 
-   - Accept all the warning prompts. In the delete `{github-username}/sample-node-project` pop-up, copy the **repository name** **(1)** and paste it in the **box** **(2)** to confirm your decision. Finally, click on the I understand the consequences, **Delete this repository** **(3)** option.
+       - Accept all the warning prompts. In the delete `{github-username}/sample-node-project` pop-up, copy the **repository name** **(1)** and paste it in the **box** **(2)** to confirm your decision. Finally, click on the I understand the consequences, **Delete this repository** **(3)** option.
 
-
-   - Navigate back to **step 1** and try to fork the repository again. 
+       - Navigate back to **step 1** and try to fork the repository again. 
 
 1. On the **Create a new fork** page, click on the **Create fork** option.
 
@@ -371,7 +380,7 @@ Optimizing workflow performance by caching dependencies can significantly improv
 
     ![](../media/optimize2.png)
 
-3. Replace the following code with the below code,and click on **Commit Changes**.
+3. Replace the existing code with the below **code (1)** and click on **Commit Changes (2)**.
 
     ```
     name: Node.js CI
@@ -419,13 +428,13 @@ Optimizing workflow performance by caching dependencies can significantly improv
 
 ### Task 5: Code Scanning and Vulnerability Detection
 
-1. Navigate back to the `github-action` repo from the GitHub repository.
+1. Navigate back to the `github-action` repository.
 
 1. Click on the **Security** **(1)** option, and select **Enable vulnerability reporting** **(2)** next to the **Private vulnerability reporting** option.
 
     ![](../media/security.png)
 
-1. Once you've navigated to the **Code security and analysis** page, click on the **Enable** button for **Private vulnerability reporting**, **Dependabot alerts**, **Dependabot security updates**, and **Dependabot on Actions runners**.
+1. You will be navigated to the **Code security and analysis** page, click on the **Enable** button for **Private vulnerability reporting**, **Dependabot alerts**, **Dependabot security updates**, and **Dependabot on Actions runners**.
 
     ![](../media/enable.png)
 
@@ -452,7 +461,7 @@ Optimizing workflow performance by caching dependencies can significantly improv
 
    ![](../media/21-06-2024(24).png)
    
-1. Go to the **Settings** option. Click on the **Code security and analysis** button. Now, scroll down to **Push protection** and click on **Enable**.
+1. Go to the **Settings** option. Click on the **Code security** button. Now, scroll down to **Push protection** and click on **Enable**.
 
    ![Picture1](../media/code_security_1.png)
 
@@ -467,6 +476,8 @@ Optimizing workflow performance by caching dependencies can significantly improv
 1. Go to **Developer settings** -> **Personal access tokens** -> **Tokens (classic) (1)**, and then click on **Generate new token (2)** option at the top. Now select **Generate new token (classic) (3)**.
 
     ![Picture1](../media/generate_new_2(2).png)
+
+    > **Note:** Provide the password if prompted.
 
 1. From here, give your secret a name, such as **Secret scanning**, set the **Expiration** to **_"Custom..."_** and select the next calendar day. By default, no permissions are granted, so it is safe to scroll to the bottom and click on **Generate token**.
 
@@ -484,7 +495,7 @@ Optimizing workflow performance by caching dependencies can significantly improv
 
    ![](../media/21-06-2024(6).png)
 
-1. Navigate to the **Code** **(1)** option from the top navigation pane, click on the **<> Code** drop-down **(2)**, select **Local** **(3)**, and copy the **Repo URL** **(4)**.
+1. Navigate back to the `github-action` repository, click on **Code** **(1)** option from the top navigation pane, click on the **<> Code** drop-down **(2)**, select **Local** **(3)**, and copy the **Repo URL** **(4)**. Paste it in a notepad.
 
    ![](../media/21-06-2024(25).png)
 
@@ -551,3 +562,5 @@ Optimizing workflow performance by caching dependencies can significantly improv
 ### Summary
 
 In this lab, you learned about reusable workflows and matrix builds.
+
+### You have successfully completed the lab!
