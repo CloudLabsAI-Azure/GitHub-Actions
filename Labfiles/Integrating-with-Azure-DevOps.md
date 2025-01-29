@@ -1,5 +1,7 @@
 # Lab 6: Integrating with Azure DevOps
 
+## Overview
+
 Azure Boards is a powerful tool within the Azure DevOps suite designed to help teams plan, track, and manage their work. Integrating Azure Boards with GitHub can significantly enhance project management by linking development activities with planning and tracking workflows. Here's how this integration can benefit your team and the steps to set it up:
 
 ### Benefits of Integrating Azure Boards with GitHub
@@ -11,6 +13,11 @@ Azure Boards is a powerful tool within the Azure DevOps suite designed to help t
 
 In this exercise, you'll explore Azure boards and Azure test plans. Azure Boards provides software development teams with the interactive and customizable tools they need to manage their software projects. Azure Test Plans provide rich and powerful tools everyone in the team can use to drive quality and collaboration throughout the development process. The easy-to-use, browser-based test management solution provides all the capabilities required for planned manual testing.
 
+## Lab Objectives
+
+- Task 1: Connect the Azure Board with GitHub
+- 
+
 ### Task 1: Connect the Azure Board with GitHub
 
 In this task, you'll connect your Azure DevOps project's board to your GitHub repository using the Azure Boards app for GitHub to support the integration between Azure Boards and GitHub. This app is free for both public and private repositories. You'll also explore work items.  In this task, you'll make changes in GitHub, link a PR to Azure boards using syntax, and monitor the work item.
@@ -18,7 +25,7 @@ In this task, you'll connect your Azure DevOps project's board to your GitHub re
 1. In your browser, open Azure DevOps by navigating to the below URL:
 
     ``` 
-    https://dev.azure.com/  
+    https://aex.dev.azure.com/
     ```
 1. Choose **Start Free (1)**.
 
