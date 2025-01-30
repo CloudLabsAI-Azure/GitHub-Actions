@@ -47,7 +47,7 @@ Rather than copying and pasting from one workflow to another, you can make workf
            run: echo "Hi, this message is from primary workflow"
    ```
 
-   ![](../media/ga.png)
+   ![](../media/ga3.png)
 
 1. In the **Commit changes (1)** pop-up window, click on the **Commit changes (2)** option.
 
