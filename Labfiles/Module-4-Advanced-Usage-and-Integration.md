@@ -84,11 +84,11 @@ In this task, you'll analyze and resolve an error with the workflow.
 
 1. Navigate to the **Code** **(1)** option and click on the **.github/workflows** **(2)** folder.
 
-   ![](../media/4th-oidc-click.png)
+      ![](../media/4th-oidc-click.png)
 
 2. In the **.github/workflows** folder, click on **Add file** **(1)**, and select the **+ Create new file** **(2)** option.
 
-   ![](../media/4th-oidc.png)
+      ![](../media/4th-oidc.png)
 
 3. Provide the file name as **deploy-to-azure.yml** **(1)**. In the editor, **copy and paste** **(2)** the below script, and click on **commit changes** **(3)**.
 
@@ -112,15 +112,15 @@ In this task, you'll analyze and resolve an error with the workflow.
 
 5. Click on the **Action** tab. Verify if the workflow has Failed, and click on the **Create deploy-to-azure.yml** workflow.
 
-   ![](../media/action-issue-check_1(1).png)
+      ![](../media/action-issue-check_1(1).png)
 
 6. Click on **build** **(1)**, expand **Run missing Script** **(2)**, and you'll see the error that `npm ERR! enoent ENOENT: no such file or directory, open 'Run bash ./missing-script.sh bash: ./missing-script.sh: No such file or directory` **(3)**.
 
-   ![](../media/issue-file.png)
+      ![](../media/issue-file.png)
 
 7. Navigate to the **Code** **(1)** option, click on **Add File** **(2)**, and select **+ Create new file** **(3)**.
     
-    ![](../media/ex2-task2-step18.png)
+      ![](../media/ex2-task2-step18.png)
     
 8. Provide the file name as **missing-script.sh** **(1)**. In the editor, **copy and paste** **(2)** the below script, and click on **commit changes** **(3)**.
 
@@ -133,13 +133,13 @@ In this task, you'll analyze and resolve an error with the workflow.
 
 10. Click on the **Action** tab. Verify if the workflow **Create missing-script.sh** has "Succedded".
 
-    ![](../media/issue-fixed.png)
+       ![](../media/issue-fixed.png)
 
 11. Click on **Build** **(1)**, expand **Run missing script** **(2)**
 
-    ![](../media/issue-fixed-result1.png)
+       ![](../media/issue-fixed-result1.png)
 
-    >**Note**: You just resolved an issue by creating the missing PowerShell script and triggering the workflow.
+       > **Note**: You just resolved an issue by creating the missing PowerShell script and triggering the workflow.
 
 >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
@@ -260,3 +260,9 @@ For advanced management, organization owners can control which repositories are 
 Detailed instructions and further information are available in the GitHub documentation, including REST API endpoints for self-hosted runners and guidance on disabling or limiting GitHub Actions for organizations. Overall, self-hosted runners offer a powerful way to customize and enhance GitHub Actions workflows, but careful consideration of security implications is crucial, especially in public repository environments.
 
 - For more information, go through [Adding self-hosted runners](https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/adding-self-hosted-runners).
+
+## Summary
+
+In this lab, you have connected OIDC securely to the Cloud, checked on debugging and monitoring Workflow and understood the Agent Infrastructure.
+
+### You have successfully completed the lab!
