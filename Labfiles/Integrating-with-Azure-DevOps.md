@@ -52,6 +52,8 @@ In this task, you'll connect your Azure DevOps project's board to your GitHub re
 1. Click on the **only select repositories (1)** option, select the lab files repository **(2)**, `github-action` **(3)**, that you created earlier, and click on **Install & Authorize (4)**.
 
    ![](../media/ex4-kc-install&auth.png)
+
+   > **Note**: Ensure you are signed in with ODL_User Account. If not, please click on the Account from the top right and sign in with the ODL_User Account.
     
    > **Note**: If you see the message, **You’ve already purchased this on all of your GitHub accounts** this indicates Azure Boards integration is already used in your account. Follow the steps below.
 
@@ -72,7 +74,11 @@ In this task, you'll connect your Azure DevOps project's board to your GitHub re
     - Now, enter the password and **click** on **Sign in**.
 
        ![](../media/img10.png).
-    
+
+1. Click on Create New Organization.
+
+1. Click on Continue on the Get Started with Azure DevOps pop-up.
+  
 1. Select the **Azure DevOps organization (1)** and the **Azure DevOps** **(2)** project, then click on **Continue (3)**.
 
     ![](../media/azuredevops1.png)
