@@ -63,7 +63,7 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 
 1. In the **JumpVM**, click on the **Azure portal shortcut** of the Microsoft Edge browser, which is created on the desktop.
 
-   ![](../media/gettingstartpage3.png)
+   ![](../media/ga12.png)
 
 1. On the **Sign in to Microsoft Azure** tab, you will see the login screen. Enter the email or username, and click on **Next**. 
 
