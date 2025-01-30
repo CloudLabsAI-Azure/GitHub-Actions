@@ -538,39 +538,39 @@ Optimizing workflow performance by caching dependencies can significantly improv
 
 1. Insert the file name **ExampleScript.ps1** **(1)**. In the editor, **copy and paste** **(2)** the below script, replace **YOUR_GITHUB_PAT** **(3)** with the PAT you copied, **YOUR_GITHUB_USERNAME** **(4)** with a GitHub username, and **YOUR_GITHUB_REPO** **(4)**, and click on **Commit changes** **(5)**.
 
-   ```
-   # Set the GitHub PAT
-   $token = "YOUR_GITHUB_PAT"
-   
-   # Set the repository details
-   $owner = "YOUR_GITHUB_USERNAME"
-   $repo = "YOUR_GITHUB_REPO"
-   
-   # Set the file path and content
-   $file = "path/to/file.txt"
-   $content = "Hello, world!"
-   
-   # Create a new file in the repository
-   $base64Content = [System.Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes($content))
-   $body = @{
-       message = "Create new file"
-       content = $base64Content
-   } | ConvertTo-Json
-   
-   $uri = "https://api.github.com/repos/$owner/$repo/contents/$file"
-   $headers = @{
-       Authorization = "Bearer $token"
-       Accept = "application/vnd.github.v3+json"
-   }
-   
-   $response = Invoke-RestMethod -Uri $uri -Method Put -Headers $headers -Body $body
-   
-   if ($response.content.sha) {
-       Write-Host "File created successfully."
-   } else {
-       Write-Host "Failed to create file."
-   }
-   ```
+       ```
+       # Set the GitHub PAT
+       $token = "YOUR_GITHUB_PAT"
+       
+       # Set the repository details
+       $owner = "YOUR_GITHUB_USERNAME"
+       $repo = "YOUR_GITHUB_REPO"
+       
+       # Set the file path and content
+       $file = "path/to/file.txt"
+       $content = "Hello, world!"
+       
+       # Create a new file in the repository
+       $base64Content = [System.Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes($content))
+       $body = @{
+           message = "Create new file"
+           content = $base64Content
+       } | ConvertTo-Json
+       
+       $uri = "https://api.github.com/repos/$owner/$repo/contents/$file"
+       $headers = @{
+           Authorization = "Bearer $token"
+           Accept = "application/vnd.github.v3+json"
+       }
+       
+       $response = Invoke-RestMethod -Uri $uri -Method Put -Headers $headers -Body $body
+       
+       if ($response.content.sha) {
+           Write-Host "File created successfully."
+       } else {
+           Write-Host "Failed to create file."
+       }
+       ```
 
       ![](../media/ExampleScript.png)
 
