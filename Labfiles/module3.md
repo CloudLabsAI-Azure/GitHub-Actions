@@ -117,17 +117,17 @@ In this task, you'll fork a public repository and create a GitHub action using M
 
 1. Navigate to the [sample-node-project](https://github.com/acemilyalcin/sample-node-project) repo and click on **Fork**.
 
-      ![](../media/21-06-2024(1).png)
+   ![](../media/21-06-2024(1).png)
 
-      > **Note**: If a fork already exists, follow the below steps to delete the repository.
+   > **Note**: If a fork already exists, follow the below steps to delete the repository.
 
-   - In the upper-right corner, navigate to the user menu and select **Your repositories** **(1)**.
+      - In the upper-right corner, navigate to the user menu and select **Your repositories** **(1)**.
    
-     ![The `New Repository` creation form in GitHub.](../media/my_repos.png "New Repository Creation Form")
+         ![The `New Repository` creation form in GitHub.](../media/my_repos.png "New Repository Creation Form")
 
-       - Select ```sample-node-project``` from the list.
+      - Select ```sample-node-project``` from the list.
     
-           ![](../media/env46.png)
+         ![](../media/env46.png)
 
        - Click on the **Settings** tab from the GitHub homepage.
 
