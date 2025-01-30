@@ -133,42 +133,42 @@ In this task, you'll create a simple GitHub action and understand the components
 
 1. Include the file name as **hello-action.yml** **(1)**. In the editor, **copy and paste** **(2)** the below script, and click on the **Commit changes** **(3)** option.
 
-   ```
-   # This is a basic workflow to help you get started with Actions
-
-   name: CI
-
-   on:
-     push:
-       branches:
-         - main
-       paths:
-         - '.github/workflows/hello-action.yml'
-     pull_request:
-       branches:
-         - main
-       paths:
-         - '.github/workflows/hello-action.yml'
-     workflow_dispatch:
-
-   # A workflow run is made up of one or more jobs that can run sequentially or in parallel
-   jobs:
-   # This workflow contains a single job called "build"
-     build:
-       runs-on: ubuntu-latest
-       steps:
-         - uses: actions/checkout@v4
-
-         # Runs a single command using the runners shell
-         - name: Run a one-line script
-           run: echo Hello, world!
-
-         # Runs a set of commands using the runners shell
-         - name: Run a multi-line script
-           run: |
-             echo Add other actions to build,
-             echo test, and deploy your project.
-   ```
+      ```
+      # This is a basic workflow to help you get started with Actions
+   
+      name: CI
+   
+      on:
+        push:
+          branches:
+            - main
+          paths:
+            - '.github/workflows/hello-action.yml'
+        pull_request:
+          branches:
+            - main
+          paths:
+            - '.github/workflows/hello-action.yml'
+        workflow_dispatch:
+   
+      # A workflow run is made up of one or more jobs that can run sequentially or in parallel
+      jobs:
+      # This workflow contains a single job called "build"
+        build:
+          runs-on: ubuntu-latest
+          steps:
+            - uses: actions/checkout@v4
+   
+            # Runs a single command using the runners shell
+            - name: Run a one-line script
+              run: echo Hello, world!
+   
+            # Runs a set of commands using the runners shell
+            - name: Run a multi-line script
+              run: |
+                echo Add other actions to build,
+                echo test, and deploy your project.
+      ```
 
       ![](../media/21-06-2024(7).png)
 
