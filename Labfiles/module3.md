@@ -117,29 +117,29 @@ In this task, you'll fork a public repository and create a GitHub action using M
 
 1. Navigate to the [sample-node-project](https://github.com/acemilyalcin/sample-node-project) repo and click on **Fork**.
 
-   ![](../media/21-06-2024(1).png)
+    ![](../media/21-06-2024(1).png)
 
     > **Note**: If a fork already exists, follow the below steps to delete the repository.
     
-      - In the upper-right corner, navigate to the user menu and select **Your repositories** **(1)**.
+    - In the upper-right corner, navigate to the user menu and select **Your repositories** **(1)**.
        
-        ![The `New Repository` creation form in GitHub.](../media/my_repos.png "New Repository Creation Form")
+      ![The `New Repository` creation form in GitHub.](../media/my_repos.png "New Repository Creation Form")
     
-      - Select ```sample-node-project``` from the list.
+    - Select ```sample-node-project``` from the list.
         
-        ![](../media/env46.png)
+      ![](../media/env46.png)
     
-      - Click on the **Settings** tab from the GitHub homepage.
+    - Click on the **Settings** tab from the GitHub homepage.
     
-        ![](../media/env47(2).png)
+      ![](../media/env47(2).png)
     
-      - In the **Settings** page, scroll to the bottom and select **Delete this repository**.
+    - In the **Settings** page, scroll to the bottom and select **Delete this repository**.
     
-        ![The `New Repository` creation form in GitHub.](../media/2dg120.png "New Repository Creation Form")
+      ![The `New Repository` creation form in GitHub.](../media/2dg120.png "New Repository Creation Form")
     
-      - Accept all the warning prompts. In the delete `{github-username}/sample-node-project` pop-up, copy the **repository name** **(1)** and paste it in the **box** **(2)** to confirm your decision. Finally, click on the I understand the consequences, **Delete this repository** **(3)** option.
+    - Accept all the warning prompts. In the delete `{github-username}/sample-node-project` pop-up, copy the **repository name** **(1)** and paste it in the **box** **(2)** to confirm your decision. Finally, click on the I understand the consequences, **Delete this repository** **(3)** option.
     
-      - Navigate back to **step 1** and try to fork the repository again. 
+    - Navigate back to **step 1** and try to fork the repository again. 
 
 1. On the **Create a new fork** page, click on the **Create fork** option.
 
@@ -268,7 +268,7 @@ In this task, you'll set up a GitHub action using the Matrix strategy to run the
 
      ![](../media/4th-oidc.png)   
 
-10. Provide the file name as **matrix.yml** **(1)**. In the editor, **copy and paste** **(2)** the following script, and click on the **commit changes** **(3)** option.
+1. Provide the file name as **matrix.yml** **(1)**. In the editor, **copy and paste** **(2)** the following script, and click on the **commit changes** **(3)** option.
 
     ```
     name: CI
