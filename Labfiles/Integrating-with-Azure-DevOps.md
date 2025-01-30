@@ -107,6 +107,8 @@ In this task, you'll connect your Azure DevOps project's board to your GitHub re
 
 1. Once the project is created, click on **Boards** from the left pane.
 
+     ![](../media/ga6-7.png).
+
 >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
