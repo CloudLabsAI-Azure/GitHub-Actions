@@ -98,6 +98,13 @@ Rather than copying and pasting from one workflow to another, you can make workf
 
    > **Note:** This GitHub Actions workflow named "Caller Workflow" triggers on pushes to the main branch and manual dispatch for changes to the **.github/workflows/caller-workflows.yml** file. It calls a reusable workflow defined in **reusable-print-message.yml**, passing the message "Hello from the caller workflow!".
 
+>**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
+
+  <validation step="6ec6a583-d100-4574-9ab8-b3818e5f0118" />
+
 ### Task 2: Explanation and Usage of Matrix Builds
 
 Matrix builds and parallelism are advanced features in GitHub Actions that allow you to run multiple jobs concurrently.
@@ -196,6 +203,13 @@ In this task, you'll fork a public repository and create a GitHub action using M
     ![](../media/optimize4(1).png)
 
     > **Note:** This GitHub Actions workflow, named "Node.js CI," is triggered by pushes to the main branch affecting the **.github/workflows/nodejs_ci.yml** file. It sets up a job that runs on an Ubuntu environment and utilizes a matrix strategy to specify Node.js version 18.x. The workflow includes steps to check out the repository, cache Node.js dependencies to optimize workflow performance, and set up the specified Node.js version using the actions/setup-node action.
+
+>**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
+
+  <validation step="7aad43ca-74a7-4c4d-a36c-5ab16ecbf709" />
 
 ### Task 3: Matrix Builds for Testing Across Multiple Environments
 
@@ -359,6 +373,13 @@ In this task, you'll set up a GitHub action using the Matrix strategy to run the
 14. Click on the **Create matrix.yml** action. This configuration allows you to ensure your project is tested on multiple operating systems using Python 3.12, ensuring broader compatibility and seamless identification of environment-specific issues at an early stage.
 
     ![](../media/matrix-output.png)
+
+>**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
+
+   <validation step="ba1751b9-d16b-47ac-9282-a6ecc8cb4870" />
 
 ### Task 4: Using Artifacts and Dependencies in Workflows
 
@@ -558,6 +579,13 @@ Optimizing workflow performance by caching dependencies can significantly improv
 1. In the **Commit changes** pop-up window, click on the **Commit changes** button.
 
    ![](../media/ExampleScript-commit.png)
+
+>**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
+
+   <validation step="4c2f79e2-cb6f-4f65-bfc3-044a87a12b32" />
 
 ### Summary
 
