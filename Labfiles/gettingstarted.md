@@ -7,12 +7,12 @@ This hands-on lab provides a comprehensive introduction to GitHub Actions, guidi
 
 ## Objectives
 
-- **Workflow Setup** : 
-- **Action Integration**
-- **Advanced Workflows**
-- **GitHub Environment**
-- **Security and Best Practices**
-- **Integrating with Azure DevOps**
+- **Workflow Setup** : In this lab, you'll learn the fundamentals of GitHub Actions and workflow files. We'll cover how to trigger workflows with events like pushes and pull requests, define jobs and steps within workflows, and set up a basic CI workflow for testing code on every push.
+- **Action Integration** : In this lab, you wil focus on incorporating pre-built actions from the GitHub Marketplace and creating custom actions for reusable tasks.
+- **Advanced Workflows** : In this lab, you will learn and apply secure coding practices, version control, automated testing, CI/CD, and development security to ensure high-quality, consistent, and secure software. 
+- **GitHub Environment** : This is lab is about configuring GitHub Environments. GitHub environments in GitHub Actions allow you to define and manage deployment environments like development, staging, and production. They include protection rules such as required reviewers, wait times, and environment-specific secrets to enhance security and control.
+- **Security and Best Practices** : In this lab, you will be introduced with OpenID Connect (OIDC), a protocol that allows GitHub Actions workflows to securely access Azure resources without storing Azure credentials as long-lived GitHub secrets.
+- **Integrating with Azure DevOps** : In this lab, you will integrate GitHub with Azure DevOps to seamlessly link GitHub pull requests to Azure Boards. This will enable streamlined project management, automated work item updates, and enhanced traceability of code changes for improved collaboration.
 
 ## Prerequisites
 
