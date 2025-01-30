@@ -227,7 +227,7 @@ In this task, you'll set up a GitHub action using the Matrix strategy to run the
 
 2. Navigate to the **Code** **(1)** tab. Click on **Add File** **(2)** and select the **+ Create new file** **(3)** option.
 
-    ![](../media/ex2-task2-step18.png)
+      ![](../media/ex2-task2-step18.png)
 
 3. Provide the file name as **requirements.txt (1)**. In the editor, **copy and paste** **(2)** the below script, and click on the **Commit changes** **(3)** option.
 
@@ -235,15 +235,15 @@ In this task, you'll set up a GitHub action using the Matrix strategy to run the
    pytest
    ```
 
-   ![](../media/21-06-2024(16).png)
+     ![](../media/21-06-2024(16).png)
    
 4. In the **Commit changes** pop-up window, click on the **Commit changes** option.
 
-   ![](../media/21-06-2024(17).png)
+     ![](../media/21-06-2024(17).png)
 
 5. Click on the **Add File** **(1)** button and select the **+ Create new file** **(2)** option.
 
-   ![](../media/21-06-2024(3).png)
+     ![](../media/21-06-2024(3).png)
 
 6. Provide the file name as **tests/test_sample.py** **(1)**. In the editor, **copy and paste** **(2)** the below script, and click on the **Commit changes** **(3)** option.
 
@@ -254,19 +254,19 @@ In this task, you'll set up a GitHub action using the Matrix strategy to run the
         print("Completed test_sample successfully")
     ```
 
-    ![](../media/21-06-2024(18).png)
+      ![](../media/21-06-2024(18).png)
 
 7. In the **Commit changes** pop-up window, click on the **Commit changes** option.
 
-   ![](../media/21-06-2024(4).png)
+     ![](../media/21-06-2024(4).png)
 
 8. Navigate to the **Code** **(1)** tab and click on the **.github/workflows** **(2)** folder.
 
-   ![](../media/4th-oidc-click.png)
+     ![](../media/4th-oidc-click.png)
 
 9. In the **.github/workflows** folder, click on **Add files** **(1)**, and select **+ Create new file** **(2)**.
 
-   ![](../media/4th-oidc.png)   
+     ![](../media/4th-oidc.png)   
 
 10. Provide the file name as **matrix.yml** **(1)**. In the editor, **copy and paste** **(2)** the following script, and click on the **commit changes** **(3)** option.
 
@@ -360,19 +360,19 @@ In this task, you'll set up a GitHub action using the Matrix strategy to run the
                       pytest
 
     ```
-    ![](../media/21-06-2024(19).png)
+       ![](../media/21-06-2024(19).png)
 
     > **Note**: This CI configuration uses GitHub Actions to run tests on multiple OSs (Ubuntu, Windows, and macOS) with Python 3.12. It triggers push and pull requests to the main branch, checks out the code, sets up Python, installs dependencies, and runs tests with pytest, ensuring cross-platform compatibility.
 
 12. In the **Commit changes** pop-up window, click on the **Commit changes** option.
 
-    ![](../media/21-06-2024(20).png)
+      ![](../media/21-06-2024(20).png)
 
 13. Click on the **Actions** **(1)** tab. Verify that the **Create matrix.yml** workflow has been executed successfully.
 
 14. Click on the **Create matrix.yml** action. This configuration allows you to ensure your project is tested on multiple operating systems using Python 3.12, ensuring broader compatibility and seamless identification of environment-specific issues at an early stage.
 
-    ![](../media/matrix-output.png)
+      ![](../media/matrix-output.png)
 
 >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
@@ -447,86 +447,94 @@ Optimizing workflow performance by caching dependencies can significantly improv
 
     ![](../media/optimize4.png)
 
+>**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
+
+   <validation step="4c2f79e2-cb6f-4f65-bfc3-044a87a12b32" />
+
 ### Task 5: Code Scanning and Vulnerability Detection
 
 1. Navigate back to the `github-action` repository.
 
 1. Click on the **Security** **(1)** option, and select **Enable vulnerability reporting** **(2)** next to the **Private vulnerability reporting** option.
 
-    ![](../media/security.png)
+      ![](../media/security.png)
 
 1. You will be navigated to the **Code security and analysis** page, click on the **Enable** button for **Private vulnerability reporting**, **Dependabot alerts**, **Dependabot security updates**, and **Dependabot on Actions runners**.
 
-    ![](../media/enable.png)
+      ![](../media/enable.png)
 
 1. Click on the **Set up** **(1)** button to enable **CodeQL analysis**, and select the **Advanced** **(2)** option for creating a **CodeQL Analysis YAML file**.
 
-   ![](../media/2dgn169.png)      
+     ![](../media/2dgn169.png)      
 
 1. Update the workflow name to **codeql-analysis.yml** **(1)** and review the YAML file. Select **Commit changes** **(2)**.
-   ![](../media/ex5-task1-step3a.png)
+
+     ![](../media/ex5-task1-step3a.png)
 
 1. In the **Commit changes** pop-up window, click on the **Commit changes** button.
   
-   ![](../media/ex5-task1-step3b.png) 
+     ![](../media/ex5-task1-step3b.png) 
   
 1. Navigate to the **Actions** **(1)** tab. You can review the **workflow** **(2)** run.
     
-   ![](../media/ex5-codeql-actions.png) 
+     ![](../media/ex5-codeql-actions.png) 
   
 1. Navigate to the **Security (1)** tab and click on **View alerts (2)**.
    
-   ![](../media/21-06-2024(23).png)
+     ![](../media/21-06-2024(23).png)
   
 1. You'll be navigated to the **Code scanning** section. Here, you'll be able to visualize the **No code scanning alerts here!** message.
 
-   ![](../media/21-06-2024(24).png)
+     ![](../media/21-06-2024(24).png)
    
 1. Go to the **Settings** option. Click on the **Code security** button. Now, scroll down to **Push protection** and click on **Enable**.
 
-   ![Picture1](../media/code_security_1.png)
+     ![Picture1](../media/code_security_1.png)
 
-   ![Picture1](../media/push_1.png)
+     ![Picture1](../media/push_1.png)
 
-   > **Note:** If the Push protection is already enabled, please skip this step.
+      > **Note:** If the Push protection is already enabled, please skip this step.
 
 1. Once again, go to your profile, which is at the top right hand side of the screen, and then select **Settings**.
 
-   ![Picture1](../media/profilesetting.png)
+     ![Picture1](../media/profilesetting.png)
 
 1. Go to **Developer settings** -> **Personal access tokens** -> **Tokens (classic) (1)**, and then click on **Generate new token (2)** option at the top. Now select **Generate new token (classic) (3)**.
 
-    ![Picture1](../media/generate_new_2(2).png)
+      ![Picture1](../media/generate_new_2(2).png)
 
-    > **Note:** Provide the password if prompted.
+      > **Note:** Provide the password if prompted.
 
 1. From here, give your secret a name, such as **Secret scanning**, set the **Expiration** to **_"Custom..."_** and select the next calendar day. By default, no permissions are granted, so it is safe to scroll to the bottom and click on **Generate token**.
 
-   ![](../media/PATtoken.png)
+     ![](../media/PATtoken.png)
 
 1. Once you've generated the token, click on the **"Copy"** icon to the right of the secret value in the notepad.
 
-   ![](../media/token.png)
+     ![](../media/token.png)
 
 1. Search **Notepad (1)** using the search box, and select the same from the suggestions **(2)**.
 
-   ![](../media/21-06-2024(5).png)
+     ![](../media/21-06-2024(5).png)
 
 1. Paste the **PAT token** that you copied in step **number 14**.
 
-   ![](../media/21-06-2024(6).png)
+     ![](../media/21-06-2024(6).png)
 
 1. Navigate back to the `github-action` repository, click on **Code** **(1)** option from the top navigation pane, click on the **<> Code** drop-down **(2)**, select **Local** **(3)**, and copy the **Repo URL** **(4)**. Paste it in a notepad.
 
-   ![](../media/21-06-2024(25).png)
+     ![](../media/21-06-2024(25).png)
 
 1. From the repo URL, select the username as shown in the image below and paste it in **Notepad**.
 
-   ![](../media/user-name.png)
+     ![](../media/user-name.png)
 
 1. Click on the **Code (1)** tab. Select the **Add file** **(2)** option and click on the **+ Create new file** **(3)** button.
 
-   ![](../media/ex2-task2-step18.png)
+     ![](../media/ex2-task2-step18.png)
 
 1. Insert the file name **ExampleScript.ps1** **(1)**. In the editor, **copy and paste** **(2)** the below script, replace **YOUR_GITHUB_PAT** **(3)** with the PAT you copied, **YOUR_GITHUB_USERNAME** **(4)** with a GitHub username, and **YOUR_GITHUB_REPO** **(4)**, and click on **Commit changes** **(5)**.
 
@@ -564,28 +572,21 @@ Optimizing workflow performance by caching dependencies can significantly improv
    }
    ```
 
-   ![](../media/ExampleScript.png)
+      ![](../media/ExampleScript.png)
 
 1. In the **Commit changes** pop-up window, click on the **Commit changes** button.
 
-   ![](../media/ExampleScript-commit.png)
+     ![](../media/ExampleScript-commit.png)
 
 1. You'll get to see the following warning message on the screen: **Secret scanning found a GitHub Personal Access Token secret on line 2.** Select the **It's used in tests** **(1)** option and click on **Allow Secret** **(2)**.
 
-   ![](../media/ExampleScript-commit-risk.png)
+     ![](../media/ExampleScript-commit-risk.png)
 
 1. **Secret allowed. You can now commit these changes**. In the editor window, click on **Commit changes**.
 
 1. In the **Commit changes** pop-up window, click on the **Commit changes** button.
 
-   ![](../media/ExampleScript-commit.png)
-
->**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
-> - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
-> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
-
-   <validation step="4c2f79e2-cb6f-4f65-bfc3-044a87a12b32" />
+     ![](../media/ExampleScript-commit.png)
 
 ### Summary
 
