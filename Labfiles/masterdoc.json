@@ -5,11 +5,11 @@
     "BaseURL": "https://github.com/CloudLabsAI-Azure/GitHub-Actions/tree/main",
     "Files": [
       {
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/GitHub-Actions/main/Labfiles/gettingstarted.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/GitHub-Actions/main/Labfiles/gettingstarted.md",
         "Order": 1
       },
       {
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/GitHub-Actions/main/Labfiles/intro-to-github.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/GitHub-Actions/main/Labfiles/intro-to-github.md",
         "Order": 2
       },
       {
@@ -17,23 +17,23 @@
         "Order": 3
       },
       {
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/GitHub-Actions/main/Labfiles/module2.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/GitHub-Actions/main/Labfiles/module2.md",
         "Order": 4
       },
       {
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/GitHub-Actions/main/Labfiles/module3.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/GitHub-Actions/main/Labfiles/module3.md",
         "Order": 5
       },
       {
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/GitHub-Actions/main/Labfiles/create-environment.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/GitHub-Actions/main/Labfiles/create-environment.md",
         "Order": 6
       },
       {
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/GitHub-Actions/main/Labfiles/Module-4-Advanced-Usage-and-Integration.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/GitHub-Actions/main/Labfiles/Module-4-Advanced-Usage-and-Integration.md",
         "Order": 7
       },
       {
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/GitHub-Actions/main/Labfiles/Integrating-with-Azure-DevOps.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/GitHub-Actions/main/Labfiles/Integrating-with-Azure-DevOps.md",
         "Order": 8
       }
     ]
