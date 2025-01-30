@@ -143,7 +143,7 @@ In this task, you'll fork a public repository and create a GitHub action using M
 
 2. On the **Create a new fork** page, click on the **Create fork** option.
 
-   ![](../media/21-06-2024(2).png)
+    ![](../media/21-06-2024(2).png)
 
 1. Navigate to the **Actions** **(1)** directory in your repository. In the `Get started with GitHub Actions` window, click on the **Set up a workflow yourself (2)** option.
 
