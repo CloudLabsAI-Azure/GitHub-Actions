@@ -109,6 +109,13 @@ In this task, you'll connect your Azure DevOps project's board to your GitHub re
 
 1. You've successfully linked the GitHub account.
 
+>**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
+
+  <validation step="cd611c8f-8c88-44ac-b8d4-76e45fa50f6a	" />
+
 ### Task 2: Link GitHub Pull Requests to Boards Items
 
 In this task, you'll make changes to the GitHub link, send a PR to Azure boards using syntax, and monitor the work item.
