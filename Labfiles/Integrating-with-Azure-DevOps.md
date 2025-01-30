@@ -83,13 +83,20 @@ In this task, you'll connect your Azure DevOps project's board to your GitHub re
 
 1. Keep the values as default and click on **Continue**.
 
-1. Click on Continue on the Get Started with Azure DevOps pop-up.
+1. Provide the **CAPTCHA (1)** as per the image and click on **Continue (2)**.
+
+1. Click on **Continue** on the Get Started with Azure DevOps pop-up.
   
-1. Select the **Azure DevOps organization (1)** and the **Azure DevOps** **(2)** project, then click on **Continue (3)**.
+1. Navigate to the organization settings in a new tab and click the checkbox for **Allow public projects**. 
 
-    ![](../media/azuredevops1.png)
+   > **Note**: Click on **Save** on the Change policy setting pop-up. 
 
-    > **Note**: After successfully logging in to the Azure DevOps portal, you'll get to see the **Success!** pop-up window on your screen. Click on the **close** button to remove it.
+1. Provide the project name as **New-Project (1)**, check the box for **Public (2)** and click on **+ Create project (3)**.
+
+1. Once the project is created, click on **Boards** from the left pane.
+
+
+   > **Note**: After successfully logging in to the Azure DevOps portal, you'll get to see the **Success!** pop-up window on your screen. Click on the **close** button to remove it.
 1. When the integration succeeds, you'll be taken to the Azure DevOps Board. In the onboarding tutorial, click on **Create** to create an initial issue in the `To Do` column.
     >**Note**: Make sure to reduce the screen resolution in your browser window if you're not able to view the **Create** and **Create and link a pull request** options in the onboarding tutorial page.
 
