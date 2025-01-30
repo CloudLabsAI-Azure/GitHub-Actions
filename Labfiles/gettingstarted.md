@@ -21,34 +21,49 @@ This hands-on lab provides a comprehensive introduction to GitHub Actions, guidi
 - Understanding of Git workflows and version control best practices.
 
 ## Getting Started with the Lab
-
-1. After the environment has been set up, your browser will load a virtual machine (JumpVM). Use this virtual machine throughout the workshop to perform the lab. You can see the number on the bottom of the lab guide to switch to different exercises in the lab guide.
-
-   ![](../media/test2.png)
+Welcome to your Advanced Workflow Automation with GitHub Actions Workshop! We've prepared a seamless environment for you to explore and learn about Azure services. Let's begin by making the most of this experience.
  
-1. To get the lab environment details, click on the **Environment** tab. Additionally, the credentials will also be emailed to your registered email address. You can open the Lab Guide in a separate and full window by selecting the **Split Window** option from the lower right corner. Also, you can start, stop, and restart virtual machines from the **Resources** tab.
+## Accessing Your Lab Environment
+ 
+Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
 
-    ![](../media/gettingstartedpagenew2-v2.png)
-   
-   > Check out the **SUFFIX** value on the **Environment** tab. Use it wherever you see **SUFFIX** or **DeploymentID** in lab steps.
+  ![OpenAI](../media/ga7.png)
+
+## Exploring Your Lab Resources
+ 
+To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
+ 
+  ![OpenAI](../media/ga8.png)
+ 
+## Utilizing the Split Window Feature
+ 
+For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
+ 
+  ![OpenAI](../media/ga9.png)
+
+## Managing Your Virtual Machine
+ 
+Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
+
+  ![OpenAI](../media/ga11.png)
 
 ## Lab Validation
 
 1. After completing the task, hit the **Validate** button under Validation tab integrated within your lab guide. If you receive a success message, you can proceed to the next task, if not, carefully read the error message and retry the step, following the instructions in the lab guide.
 
-   ![Inline Validation](images/new-get-start-25-5.png)
+   ![Inline Validation](../media/new-get-start-25-5.png)
 
 ## Lab Guide Zoom In/Zoom Out
  
 1. To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
 
-     ![OpenAI](images/new-get-start-25-6.png)
+     ![OpenAI](../media/new-get-start-25-6.png)
  
 ## Login to the Azure Portal
 
 1. In the **JumpVM**, click on the **Azure portal shortcut** of the Microsoft Edge browser, which is created on the desktop.
 
-   ![](../media/gettingstartpage3.png)
+   ![](../media/ga12.png)
 
 1. On the **Sign in to Microsoft Azure** tab, you will see the login screen. Enter the email or username, and click on **Next**. 
 
@@ -94,6 +109,6 @@ Now you're all set to explore the powerful world of technology. Feel free to rea
 
 Now, click on **Next** from the lower right corner to move on to the next page.
 
-  ![Asklater](images/num.png)
+  ![Asklater](../media/num.png)
 
 ## Happy Learning!!
