@@ -141,7 +141,7 @@ In this task, you'll fork a public repository and create a GitHub action using M
 
     - Navigate back to **step 1** and try to fork the repository again. 
 
-1. On the **Create a new fork** page, click on the **Create fork** option.
+2. On the **Create a new fork** page, click on the **Create fork** option.
 
    ![](../media/21-06-2024(2).png)
 
