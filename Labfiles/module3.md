@@ -47,7 +47,7 @@ Rather than copying and pasting from one workflow to another, you can make workf
            run: echo "Hi, this message is from primary workflow"
    ```
 
-   ![](../media/21-06-2024(13).png)
+   ![](../media/ga.png)
 
 1. In the **Commit changes (1)** pop-up window, click on the **Commit changes (2)** option.
 
@@ -59,7 +59,7 @@ Rather than copying and pasting from one workflow to another, you can make workf
 
    ![](../media/env26.png)
 
-1. Copy the code given below, paste it into the window, and name the file **caller-workflows.yml**.
+1. Copy the code given below, paste it into the window, and name the file **caller-workflows.yml** and click on **Commit changes**.
 
    ```
    name: Caller Workflow
@@ -82,7 +82,7 @@ Rather than copying and pasting from one workflow to another, you can make workf
          message: "Hello from the caller workflow!"
     ```
 
-   ![](../media/21-06-2024(14).png)   
+   ![](../media/ga3-1.png)   
 
 1. On the **Commit changes (1)** pop-up window, click on the **Commit changes (2)** option.
 
@@ -200,7 +200,7 @@ In this task, you'll fork a public repository and create a GitHub action using M
 
 1. Click on the **Actions** **(1)** tab. Verify the workflow has been executed successfully by looking for the green badge. Select the newly created workflow, **nodejs_ci.yml** **(2)**.
 
-    ![](../media/optimize4(1).png)
+    ![](../media/ga3-2.png)
 
     > **Note:** This GitHub Actions workflow, named "Node.js CI," is triggered by pushes to the main branch affecting the **.github/workflows/nodejs_ci.yml** file. It sets up a job that runs on an Ubuntu environment and utilizes a matrix strategy to specify Node.js version 18.x. The workflow includes steps to check out the repository, cache Node.js dependencies to optimize workflow performance, and set up the specified Node.js version using the actions/setup-node action.
 
