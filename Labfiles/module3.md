@@ -147,7 +147,7 @@ In this task, you'll fork a public repository and create a GitHub action using M
 
 1. Navigate to the **Actions** **(1)** directory in your repository. In the `Get started with GitHub Actions` window, click on the **Set up a workflow yourself (2)** option.
 
-   ![](../media/newaction.png)
+     ![](../media/newaction.png)
 
 1. Include the file name as **nodejs_ci.yml** **(1)**. In the editor, **copy and paste** **(2)** the below script, and click on the **Commit changes** **(3)** option.
 
