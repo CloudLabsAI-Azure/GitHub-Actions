@@ -22,6 +22,8 @@ In this exercise, you'll explore Azure boards and Azure test plans. Azure Boards
 
 In this task, you'll connect your Azure DevOps project's board to your GitHub repository using the Azure Boards app for GitHub to support the integration between Azure Boards and GitHub. This app is free for both public and private repositories. You'll also explore work items.  In this task, you'll make changes in GitHub, link a PR to Azure boards using syntax, and monitor the work item.
 
+1. Navigate to the **IN-PRIVATE** window in your VM.
+
 1. In your browser, open GitHub Marketplace by navigating to the URL provided below:
 
     ``` 
@@ -30,7 +32,7 @@ In this task, you'll connect your Azure DevOps project's board to your GitHub re
 
     ![The Azure Boards Integration App on GitHub Marketplace that will provide a link between Azure DevOps Boards and GitHub issues.](../media/hol-ex1-task1-step1.png "Azure Boards Integration App on GitHub Marketplace")
 
-1. Scroll to the bottom of the page and select `Install it for Free.`
+1. Scroll to the bottom of the page and select `Install it for Free`.
 
    ![](../media/2dg50.png)
 
@@ -52,10 +54,8 @@ In this task, you'll connect your Azure DevOps project's board to your GitHub re
 1. Click on the **only select repositories (1)** option, select the lab files repository **(2)**, `github-action` **(3)**, that you created earlier, and click on **Install & Authorize (4)**.
 
    ![](../media/ex4-kc-install&auth.png)
-
-   > **Note**: Ensure you are signed in with ODL_User Account. If not, please click on the Account from the top right and sign in with the ODL_User Account.
     
-   > **Note**: If you see the message, **You’ve already purchased this on all of your GitHub accounts** this indicates Azure Boards integration is already used in your account. Follow the steps below.
+  > **Note**: If you see the message, **You’ve already purchased this on all of your GitHub accounts** this indicates Azure Boards integration is already used in your account. Follow the steps below.
 
    - On the **Azure Boards Marketplace** page, click the **ellipsis (1)** in the upper right corner and select the **Username (2)**.
 
@@ -69,13 +69,19 @@ In this task, you'll connect your Azure DevOps project's board to your GitHub re
 
        ![](../media/ex4-kc-install&auth.png)
 
-    - Select the cloudlabs **Email**. <inject key="AzureAdUserEmail"></inject>
+  - Select the cloudlabs **Email**. <inject key="AzureAdUserEmail"></inject>
      
-    - Now, enter the password and **click** on **Sign in**.
+  - Now, enter the password and **click** on **Sign in**.
 
-       ![](../media/img10.png).
+    ![](../media/img10.png).
 
-1. Click on Create New Organization.
+1. Select the cloudlabs **Email**. <inject key="AzureAdUserEmail"></inject>
+
+1. Now, enter the password and **click** on **Sign in**.
+
+1. Click on **Create New Organization**.
+
+1. Keep the values as default and click on **Continue**.
 
 1. Click on Continue on the Get Started with Azure DevOps pop-up.
   
