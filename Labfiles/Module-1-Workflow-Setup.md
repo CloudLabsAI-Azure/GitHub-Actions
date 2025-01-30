@@ -84,17 +84,17 @@ In this task, you'll create a simple GitHub action and understand the components
 
 1. Navigate to the **Actions** directory in the newly created repository.
 
-   ![](../media/env16.png)
+      ![](../media/env16.png)
 
 1. In the `Get started with GitHub Actions` page, click on the **Configure** button available in the **Simple Workflow** section.
 
-   ![](../media/env15.png)
+      ![](../media/env15.png)
 
 1. You'll be able to see a very simple workflow that prints a few text sentences as output.    
 
-   ![](../media/21-06-2024(8).png)
+      ![](../media/21-06-2024(8).png)
 
-   **Note**: This workflow provides a basic template for setting up CI with GitHub Actions. It checks out the repository code, runs a simple one-line script, and then runs a multi-line script. You can expand this workflow by adding more steps to build, test, and deploy your project. Here's the complete explanation of the workflow file.
+     > **Note**: This workflow provides a basic template for setting up CI with GitHub Actions. It checks out the repository code, runs a simple one-line script, and then runs a multi-line script. You can expand this workflow by adding more steps to build, test, and deploy your project. Here's the complete explanation of the workflow file.
 
    - **Workflow Name**: The workflow is named **"CI,"** which stands for **Continuous Integration**.
 When the workflow runs:
@@ -171,21 +171,21 @@ When the workflow runs:
              echo test, and deploy your project.
    ```
 
-   ![](../media/21-06-2024(7).png)
+      ![](../media/21-06-2024(7).png)
 
 1. In the **Commit Changes** pop-up window, click on the **Commit changes** option.
 
-    ![](../media/env42.png)
+      ![](../media/env42.png)
 
 1. Click on **Actions** **(1)**, once the workflow is succeeded, click on Workflow: **Create hello-action.yml** **(2)**.
 
-   ![](../media/hello-action-trigger.png)
+      ![](../media/hello-action-trigger.png)
 
 1. Click on the **build** option under Jobs. You can see the steps and output. .
 
-    ![](../media/env22.png)
+      ![](../media/env22.png)
 
-   > **Note:** The GitHub Actions workflow, named "CI," triggers pushes to the main branch affecting **.github/workflows/hello-action.yml**, pull requests to main with changes to the same file, and can be manually triggered **(workflow_dispatch)**. It features a single job **(build)** running on Ubuntu, utilizing **actions/checkout@v4** to fetch the repository. The job executes a one-line script printing "Hello, world!" and a multi-line script for additional build, test, and deployment actions.
+      > **Note:** The GitHub Actions workflow, named "CI," triggers pushes to the main branch affecting **.github/workflows/hello-action.yml**, pull requests to main with changes to the same file, and can be manually triggered **(workflow_dispatch)**. It features a single job **(build)** running on Ubuntu, utilizing **actions/checkout@v4** to fetch the repository. The job executes a one-line script printing "Hello, world!" and a multi-line script for additional build, test, and deployment actions.
 
 >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
@@ -204,11 +204,11 @@ In GitHub Actions workflows, you define jobs and steps to orchestrate the tasks 
 
 1. Navigate to the **Code** **(1)** tab and click on the **.github/workflows** **(2)** folder.
 
-    ![](../media/editfolder.png)
+      ![](../media/editfolder.png)
 
 1. In the **.github/workflows** folder, click on **Add file** **(1)** and select the **+ Create new file** **(2)** option.
 
-    ![](../media/4th-oidc.png)
+      ![](../media/4th-oidc.png)
 
 1. Include the file name as **jobs.yml** **(1)**. In the editor, **copy and paste** **(2)** the script given below, and click on the **Commit changes** **(3)** option.
 
@@ -253,11 +253,11 @@ In GitHub Actions workflows, you define jobs and steps to orchestrate the tasks 
            - name: Run another script
              run: echo "Hello, again!"
    ```
-    ![](../media/21-06-2024(9).png)
+      ![](../media/21-06-2024(9).png)
    
  1. In the **Commit changes** pop-up window, click on the **Commit changes (1)** option.
 
-    ![](../media/jobs-action-commit.png)
+       ![](../media/jobs-action-commit.png)
 
     - You can customize the events and branches for triggering the workflow according to your project's requirements. For example, you might want to trigger the workflow only on pushes to the `main` branch or on pull requests targeting the `main` branch.
 
@@ -267,11 +267,11 @@ In GitHub Actions workflows, you define jobs and steps to orchestrate the tasks 
 
 1. Click on **Actions** **(1)**, and verify the workflow has been executed successfully. Once the workflow is succeeded select the newly created workflow **Create jobs.yml** **(2)**.
 
-   ![](../media/jobs-action-action.png)
+      ![](../media/jobs-action-action.png)
 
 1. Verify the jobs, and feel free to go through the workflow.
 
-   ![](../media/ex1-task4-step7.png)
+      ![](../media/ex1-task4-step7.png)
 
     > **Note:** This GitHub Actions workflow named "My Workflow" triggers on pushes and pull requests to the main branch, specifically for changes to the **.github/workflows/jobs.yml** file, and can also be manually triggered **(workflow_dispatch)**. It consists of two jobs: **job1**, which checks out the repository and runs a script printing "Hello, world!", and **job2**, dependent on **job1**, which checks out the repository again and runs another script printing "Hello, again!" sequentially on an Ubuntu environment.
 
