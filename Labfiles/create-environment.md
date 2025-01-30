@@ -169,6 +169,13 @@ In this task, you'll set up a GitHub environment and use it as a GitHub action.
 
 1. You can also notice the different variables and secret values defined in the Environment. These are fetched and used in the execution task. 
 
+>**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
+
+   <validation step="95b21401-f634-4613-987c-463157d12a78" />
+
 ### Summary
 
 In this lab, you learned about setting up a GitHub Environment and verified using a Reviewer account, a Wait timer, Environment variables, and secrets.
