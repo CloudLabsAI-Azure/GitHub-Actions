@@ -360,7 +360,8 @@ In this task, you'll set up a GitHub action using the Matrix strategy to run the
                       pytest
 
     ```
-       ![](../media/21-06-2024(19).png)
+
+    ![](../media/21-06-2024(19).png)
 
     > **Note**: This CI configuration uses GitHub Actions to run tests on multiple OSs (Ubuntu, Windows, and macOS) with Python 3.12. It triggers push and pull requests to the main branch, checks out the code, sets up Python, installs dependencies, and runs tests with pytest, ensuring cross-platform compatibility.
 
