@@ -16,68 +16,11 @@ In this exercise, you'll explore Azure boards and Azure test plans. Azure Boards
 ## Lab Objectives
 
 - Task 1: Connect the Azure Board with GitHub
-- 
-
+- Task 2: Link GitHub Pull Requests to Boards Items
+  
 ### Task 1: Connect the Azure Board with GitHub
 
 In this task, you'll connect your Azure DevOps project's board to your GitHub repository using the Azure Boards app for GitHub to support the integration between Azure Boards and GitHub. This app is free for both public and private repositories. You'll also explore work items.  In this task, you'll make changes in GitHub, link a PR to Azure boards using syntax, and monitor the work item.
-
-1. In your browser, open Azure DevOps by navigating to the below URL:
-
-    ``` 
-    https://aex.dev.azure.com/
-    ```
-1. Choose **Start Free (1)**.
-
-   ![](../media/start_free.png)
-
-1. Log in using your credentials.
-
-   - **Email/Username**: **<inject key="AzureAdUserEmail"></inject>**
-
-   - **Password**: **<inject key="AzureAdUserPassword"></inject>**
-
-   ![](../media/login_page.png)
-
-   ![](../media/sign_2.png)
-
-   - In case, if you handle up in Get started with Azure DevOps page, leave options to default and Click on **Continue**.
-
-   ![](../media/env49.png)
-
-  - After clicking on the **Continue** option in the **Get started with Azure DevOps** page, you'll see the **Almost done** page. Leave options to default and carefully type the **Captcha Code** provided.
-
-  ![](../media/updatedss.png)
-   
-1. In the **Create a project to get started** page, enter the **Project name** as **Azure DevOps** **(1)**. Keep visibility to **Public** **(2)** and click on **+ Create project** **(3)**.
-
-   ![](../media/create-devops-project.png)
-
-   >**Note**: If you cannot select public visibility, please follow the steps below.
-
-   - Click on **Organization policies (1)**.
-  
-     ![](../media/create_1.png)
-
-   - In the **Organization Settings** page, go to the **Policies (1)** option under **Security**, enable **Allow public projects (2)**, and click on **Save**. 
-     
-     ![](../media/env50(1).png)
-
-     ![](../media/env51.png)
-
-   - Click on the **Azure DevOps** icon to navigate back to the home page. Follow **step 1** again, and now you should be able to select the **Public** option under **Visibility**.
-
-     ![](../media/env52.png)
-      
-1. On the **Azure DevOps page,** click on **User settings** **(1)** from the top right corner of the page and click on **Preview features** **(2)**.
-
-   ![](../media/preview-features.png)
-
-    > **Note:** If you get a sign-in error, then click on **Sign out, and sign in with a different account** link, and login with your ODL user's Azure credentials. On the next page, leave the details to default and proceed. You should be logged in to the Azure DevOps organization. 
-
-1. In the **Preview features** pop-up, ensure to set the toggle button to **off** for **New Boards Hubs** **(1)** and close the preview features by clicking on **X** **(2)**.
-   
-   ![](../media/new-boards-hubs1.png)
 
 1. In your browser, open GitHub Marketplace by navigating to the URL provided below:
 
@@ -224,3 +167,9 @@ In this task, you'll make changes to the GitHub link, send a PR to Azure boards 
 1. Navigate back to the **Azure Boards** tab and notice that the **work item** has been marked as **done**.
 
     ![](../media/2dgn142.png)
+
+## Summary
+
+In this exercise, you have successfully connect the Azure Board with GitHub and linked GitHub Pull Requests to Boards Items.
+
+### You have successfully completed the lab!
