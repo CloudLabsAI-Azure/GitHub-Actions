@@ -284,11 +284,11 @@ One of the key features that make GitHub Actions flexible and robust is the abil
 
 1. Navigate to the **GitHub** homepage. From the  **Code** **(1)** tab, click on the **.github/workflows** **(2)** folder.
 
-   ![](../media/editfolder.png)
+      ![](../media/editfolder.png)
 
 1. In the **.github/workflows** folder, click on **Add files** **(1)**, and select **+ Create new file** **(2)**.
 
-   ![](../media/4th-oidc.png)
+      ![](../media/4th-oidc.png)
 
 1. Provide the file name as **conditional.yml (1)**. In the editor, **copy and paste (2)** the script below, then click on **Commit changes (3).**
 
@@ -337,17 +337,17 @@ One of the key features that make GitHub Actions flexible and robust is the abil
           run: echo Hello again, world!
     ```
 
-    ![](../media/21-06-2024(12).png)
+      ![](../media/21-06-2024(12).png)
 
 1. In the **Commit changes** pop-up, click on the **Commit changes** button.
 
-    ![](../media/save-ifcondtion.png)
+      ![](../media/save-ifcondtion.png)
 
 1. Click on **Actions** **(1)** and verify that the workflow has been executed successfully by spotting the green badge. Moving on, select the newly created workflow **Create conditional.yml** **(2)**.
 
-    ![](../media/ifcondtion-created.png)
+      ![](../media/ifcondtion-created.png)
    
-   >**Note**: This GitHub Actions workflow, named "Complex Workflow," triggers push and pull request events to the main branch when the .github/workflows/conditional.yml file is modified. It includes two jobs: job1, which checks out the repository and runs a simple script, and job2, which runs only if job1 is successful and the event is a push, checking out the repository again and running a different script.
+      > **Note**: This GitHub Actions workflow, named "Complex Workflow," triggers push and pull request events to the main branch when the .github/workflows/conditional.yml file is modified. It includes two jobs: job1, which checks out the repository and runs a simple script, and job2, which runs only if job1 is successful and the event is a push, checking out the repository again and running a different script.
 
 >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
