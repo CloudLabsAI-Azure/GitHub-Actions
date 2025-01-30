@@ -96,18 +96,17 @@ In this task, you'll create a simple GitHub action and understand the components
 
      > **Note**: This workflow provides a basic template for setting up CI with GitHub Actions. It checks out the repository code, runs a simple one-line script, and then runs a multi-line script. You can expand this workflow by adding more steps to build, test, and deploy your project. Here's the complete explanation of the workflow file.
 
-   - **Workflow Name**: The workflow is named **"CI,"** which stands for **Continuous Integration**.
-When the workflow runs:
+      - **Workflow Name**: The workflow is named **"CI,"** which stands for **Continuous Integration**. When the workflow runs:
 
-    - **The workflow is triggered by specific events**:
+      - **The workflow is triggered by specific events**:
       
-      *Push*: The workflow runs whenever changes are pushed to the main branch.
+         *Push*: The workflow runs whenever changes are pushed to the main branch.
 
-      *Pull Request*: The workflow runs whenever a pull request is made to the main branch.
+         *Pull Request*: The workflow runs whenever a pull request is made to the main branch.
 
-      *Manual Trigger*: The workflow can also be manually triggered from the Actions tab in the GitHub repository (using workflow_dispatch).
+         *Manual Trigger*: The workflow can also be manually triggered from the Actions tab in the GitHub repository (using workflow_dispatch).
 
-    - **Jobs**: A workflow is made up of one or more jobs. In this case, there is a single job called "build." In the next task, you'll create a workflow with multiple jobs and learn about it in detail.
+     - **Jobs**: A workflow is made up of one or more jobs. In this case, there is a single job called "build." In the next task, you'll create a workflow with multiple jobs and learn about it in detail.
 
     - **Runner**: The job runs on a virtual machine (runner) provided by GitHub. Here, it uses the latest version of Ubuntu (ubuntu-latest).
 
@@ -130,7 +129,7 @@ When the workflow runs:
 
       "Test and deploy your project."  
 
-   For more information, read the [GitHub Actions](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions) documentation.
+         > **Note**: For more information, read the [GitHub Actions](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions) documentation.
 
 1. Include the file name as **hello-action.yml** **(1)**. In the editor, **copy and paste** **(2)** the below script, and click on the **Commit changes** **(3)** option.
 
@@ -212,47 +211,47 @@ In GitHub Actions workflows, you define jobs and steps to orchestrate the tasks 
 
 1. Include the file name as **jobs.yml** **(1)**. In the editor, **copy and paste** **(2)** the script given below, and click on the **Commit changes** **(3)** option.
 
-   ```
-   # This is the configuration for our GitHub Actions workflow.
-   # The workflow is triggered on push and pull request events targeting the main branch.
-   name: My Workflow
-
-   on:
-     push:
-       branches:
-         - main
-       paths:
-         - '.github/workflows/jobs.yml'
-     pull_request:
-       branches:
-         - main
-       paths:
-         - '.github/workflows/jobs.yml'
-     workflow_dispatch:
-
-   jobs:
-       # Job 1 runs first
-       job1:
-           runs-on: ubuntu-latest
-           steps:
-           # Step to checkout the code from the repository
-           - name: Checkout code
-             uses: actions/checkout@v2
-           # Step to run a simple script
-           - name: Run a script
-             run: echo "Hello, world!"
-       # Job 2 depends on the successful completion of Job 1
-       job2:
-           runs-on: ubuntu-latest
-           needs: job1
-           steps:
-           # Step to checkout the code from the repository
-           - name: Checkout code
-             uses: actions/checkout@v2
-           # Step to run another simple script
-           - name: Run another script
-             run: echo "Hello, again!"
-   ```
+      ```
+      # This is the configuration for our GitHub Actions workflow.
+      # The workflow is triggered on push and pull request events targeting the main branch.
+      name: My Workflow
+   
+      on:
+        push:
+          branches:
+            - main
+          paths:
+            - '.github/workflows/jobs.yml'
+        pull_request:
+          branches:
+            - main
+          paths:
+            - '.github/workflows/jobs.yml'
+        workflow_dispatch:
+   
+      jobs:
+          # Job 1 runs first
+          job1:
+              runs-on: ubuntu-latest
+              steps:
+              # Step to checkout the code from the repository
+              - name: Checkout code
+                uses: actions/checkout@v2
+              # Step to run a simple script
+              - name: Run a script
+                run: echo "Hello, world!"
+          # Job 2 depends on the successful completion of Job 1
+          job2:
+              runs-on: ubuntu-latest
+              needs: job1
+              steps:
+              # Step to checkout the code from the repository
+              - name: Checkout code
+                uses: actions/checkout@v2
+              # Step to run another simple script
+              - name: Run another script
+                run: echo "Hello, again!"
+      ```
       ![](../media/21-06-2024(9).png)
    
  1. In the **Commit changes** pop-up window, click on the **Commit changes (1)** option.
