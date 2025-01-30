@@ -271,6 +271,13 @@ Securing sensitive data like API keys and credentials is crucial to protecting y
 
    ![](../media/env45.png)
 
+>**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
+
+   <validation step="b17d43b4-847b-47fe-ad7f-eddb23f058e6" />
+
 ### Task 2: Conditional Execution Using If Expressions
 
 One of the key features that make GitHub Actions flexible and robust is the ability to conditionally execute steps within your workflows using if expressions. Conditional execution is essential when you want certain steps to run only under specific conditions, such as based on the branch name, the outcome of a previous step, or custom environment variables. This helps in creating more efficient and context-aware CI/CD pipelines, reducing unnecessary executions, and ensuring that the right actions are taken in the right scenarios.
@@ -341,6 +348,13 @@ One of the key features that make GitHub Actions flexible and robust is the abil
     ![](../media/ifcondtion-created.png)
    
    >**Note**: This GitHub Actions workflow, named "Complex Workflow," triggers push and pull request events to the main branch when the .github/workflows/conditional.yml file is modified. It includes two jobs: job1, which checks out the repository and runs a simple script, and job2, which runs only if job1 is successful and the event is a push, checking out the repository again and running a different script.
+
+>**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
+
+   <validation step="09dbbb26-404c-4db2-a0d5-0db89167eb42" />
 
 ### Summary
 

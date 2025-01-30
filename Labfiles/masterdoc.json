@@ -9,36 +9,32 @@
         "Order": 1
       },
       {
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/GitHub-Actions/main/README.md",
-        "Order": 2
-      },
-       {
         "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/GitHub-Actions/main/Labfiles/intro-to-github.md",
-        "Order": 3
+        "Order": 2
       },
       {
         "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/GitHub-Actions/main/Labfiles/Module-1-Workflow-Setup.md",
-        "Order": 4
+        "Order": 3
       },
       {
         "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/GitHub-Actions/main/Labfiles/module2.md",
-        "Order": 5
+        "Order": 4
       },
       {
         "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/GitHub-Actions/main/Labfiles/module3.md",
-        "Order": 6
+        "Order": 5
       },
       {
         "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/GitHub-Actions/main/Labfiles/create-environment.md",
-        "Order": 7
+        "Order": 6
       },
       {
         "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/GitHub-Actions/main/Labfiles/Module-4-Advanced-Usage-and-Integration.md",
-        "Order": 8
+        "Order": 7
       },
       {
         "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/GitHub-Actions/main/Labfiles/Integrating-with-Azure-DevOps.md",
-        "Order": 9
+        "Order": 8
       }
     ]
   }

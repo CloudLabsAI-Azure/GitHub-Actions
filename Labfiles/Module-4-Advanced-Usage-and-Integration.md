@@ -3,7 +3,8 @@
 ## Lab Objectives
 
 - Task 1: OIDC to Securely Connect to the Cloud
-- 
+- Task 2: Debugging and Monitoring Workflow
+- Task 3: Agent Infrastructure [Read Only]
 
 ### Task 1: OIDC to Securely Connect to the Cloud
 
@@ -67,6 +68,13 @@ OpenID Connect (OIDC) allows your GitHub Actions workflows to access resources i
 
    >**Note**: 
 This GitHub Actions workflow demonstrates the best practice of securely using Azure secrets by employing GitHub Secrets. The workflow, triggered on every push, runs on ubuntu-latest and performs several steps, including logging into Azure with a service principal secret, executing an Azure CLI script, and running an Azure PowerShell script.
+
+>**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
+
+   <validation step="de0bb9f2-4bc6-4c9b-9b97-f8d23a28378a" />
 
 ### Task 2: Debugging and Monitoring Workflow
 
@@ -132,6 +140,13 @@ In this task, you'll analyze and resolve an error with the workflow.
     ![](../media/issue-fixed-result1.png)
 
     >**Note**: You just resolved an issue by creating the missing PowerShell script and triggering the workflow.
+
+>**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
+
+   <validation step="3534d8a9-a527-4d7a-be8d-4afc54ba6cec" />
 
 ### Task 3: Agent Infrastructure [Read Only]
 
