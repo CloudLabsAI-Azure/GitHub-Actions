@@ -93,7 +93,7 @@ In this task, you'll connect your Azure DevOps project's board to your GitHub re
 
      ![](../media/ga6-3.png).
   
-1. Navigate to the organization settings in a new tab and click the checkbox for **Allow public projects**. 
+1. Navigate to the organization settings in a new tab and check the box for **Allow public projects**. 
 
      ![](../media/ga6-5.png).
 
