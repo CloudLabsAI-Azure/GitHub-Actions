@@ -3,7 +3,6 @@
 ## Lab Objectives
 
 - Task 1: OIDC to Securely Connect to the Cloud
-- 
 
 ### Task 1: OIDC to Securely Connect to the Cloud
 
