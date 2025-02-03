@@ -22,7 +22,7 @@ In this exercise, you'll explore Azure boards and Azure test plans. Azure Boards
 
 In this task, you'll connect your Azure DevOps project's board to your GitHub repository using the Azure Boards app for GitHub to support the integration between Azure Boards and GitHub. This app is free for both public and private repositories. You'll also explore work items.  In this task, you'll make changes in GitHub, link a PR to Azure boards using syntax, and monitor the work item.
 
-1. Navigate to the **IN-PRIVATE** window in your VM.
+1. Navigate to the **New InPrivate** window in your VM.
 
 1. In your browser, open GitHub Marketplace by navigating to the URL provided below:
 
@@ -38,6 +38,8 @@ In this task, you'll connect your Azure DevOps project's board to your GitHub re
 
     >**Note:** If the **Install it for free** button is grayed out, please proceed to the next step.
 
+1. Sign in with the GitHub credentials.
+
 1. Please enter the billing details:
 
     - `First name`: <inject key="AzureAdUserEmail"></inject>
@@ -51,15 +53,7 @@ In this task, you'll connect your Azure DevOps project's board to your GitHub re
     
 1. On the next page, select **Complete order and begin installation**.
 
-1. Click on the **only select repositories (1)** option, select the lab files repository **(2)**, `github-action` **(3)**, that you created earlier, and click on **Install & Authorize (4)**.
-
-   ![](../media/ex4-kc-install&auth.png)
-    
-      > **Note**: If you see the message, **You’ve already purchased this on all of your GitHub accounts** this indicates Azure Boards integration is already used in your account. Follow the steps below.
-
-     - On the **Azure Boards Marketplace** page, click the **ellipsis (1)** in the upper right corner and select the **Username (2)**.
-
-         ![](../media/image_3.png)
+      > **Note**:If the option above appears, proceed directly to Step 7. If it does not, follow the steps below.
    
      - In the edit your plan window, select **grant this app access**.
    
@@ -69,45 +63,29 @@ In this task, you'll connect your Azure DevOps project's board to your GitHub re
 
          ![](../media/ex4-kc-install&auth.png)
 
-    - Select the cloudlabs **Email**. <inject key="AzureAdUserEmail"></inject>
+    - Enter the Cloudlabs **Email**. <inject key="AzureAdUserEmail"></inject>
      
-    - Now, enter the password and **click** on **Sign in**.
+    - Enter the Password: <inject key="AzureAdUserPassword"></inject> **click** on **Sign in**.
 
         ![](../media/img10.png).
 
+1. Click on the **only select repositories (1)** option, select the lab files repository **(2)**, `github-action` **(3)**, that you created earlier, and click on **Install & Authorize (4)**.
+
+   ![](../media/ex4-kc-install&auth.png)
+
 1. Enter the cloudlabs **Email**. <inject key="AzureAdUserEmail"></inject>
 
-1. Now, enter the password and **click** on **Sign in**.
+1. Enter the Password: <inject key="AzureAdUserPassword"></inject> **click** on **Sign in**.
 
-1. Click on **Create New Organization**.
-
-1. Keep the values as default and click on **Continue**.
-
-     ![](../media/ga6.png).
+1. Click on **Yes** on the Stayed signed in pop-up.
 
 1. Provide the **CAPTCHA (1)** as per the image and click on **Continue (2)**.
 
      ![](../media/ga6-2.png).
 
-1. Click on **Continue** on the Get Started with Azure DevOps pop-up.
+1. You will be re-directed to the **Boards**.
 
-     ![](../media/ga6-3.png).
-  
-1. Navigate to the organization settings in a new tab and check the box for **Allow public projects**. 
-
-     ![](../media/ga6-5.png).
-
-   > **Note**: Click on **Save** on the Change policy setting pop-up. 
-
-      ![](../media/ga6-6.png).
-
-1. Provide the project name as **New-Project (1)**, check the box for **Public (2)** and click on **+ Create project (3)**.
-
-     ![](../media/ga6-4.png).
-
-1. Once the project is created, click on **Boards** from the left pane.
-
-     ![](../media/ga6-7.png).
+      > **Note:** Close the window that pops-up.
 
 >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
