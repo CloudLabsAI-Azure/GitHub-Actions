@@ -49,7 +49,7 @@ In this task, you'll connect your Azure DevOps project's board to your GitHub re
     - `State`: Pick the state you want.
     - `Zip`: Provide the postal code.
 
-    ![](../media/billing_1.png)
+    ![](../media/action3.png)
     
 1. On the next page, select **Issue plan changes and begin installation**.
 
@@ -61,7 +61,7 @@ In this task, you'll connect your Azure DevOps project's board to your GitHub re
    
      - Click on the **only select repositories (1)** option. Select the lab files repository **(2)** `github-action` **(3)** that you created earlier and click on **Install & Authorize (4)**.
 
-         ![](../media/ex4-kc-install&auth.png)
+         ![](../media/action4.png)
 
     - Enter the Cloudlabs **Email**. <inject key="AzureAdUserEmail"></inject>
      
@@ -71,7 +71,7 @@ In this task, you'll connect your Azure DevOps project's board to your GitHub re
 
 1. Click on the **only select repositories (1)** option, select the lab files repository **(2)**, `github-action` **(3)**, that you created earlier, and click on **Install & Authorize (4)**.
 
-   ![](../media/ex4-kc-install&auth.png)
+   ![](../media/action4.png)
 
 1. Enter the cloudlabs **Email**. <inject key="AzureAdUserEmail"></inject>
 
@@ -116,7 +116,7 @@ In this task, you'll make changes to the GitHub link, send a PR to Azure boards 
 
 1. Copy `#test azure boards` **(1)** code and paste it into line number 1 of the file. Make sure there are no indentation errors.
 
-     ![](../media/2dgn166.png)
+     ![](../media/action5.png)
    
 1. Click on **Commit Changes** **(2)**, provide the details mentioned below, and click on **Propose changes** **(4)**.
 
