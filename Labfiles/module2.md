@@ -14,8 +14,8 @@ Integrating Azure with GitHub Actions provides a seamless and efficient way to a
 ### Task 1: Using GitHub Actions with Azure Container Registries with Secret Variables in Workflows 
 
 Securing sensitive data like API keys and credentials is crucial to protecting your workflows and preventing unauthorized access. This can be achieved by using secrets, which are encrypted variables that can be securely used in your workflows without exposing the actual values. In this task, you'll create an action to build and push a Docker image to the Azure container registry.
-
-1. Navigate to `potal.azure.com`. In the search bar, search for **Container registries** **(1)** and select **Container registries** **(2)**.
+ 
+1. Open a **New InPrivate** window and navigate to `potal.azure.com`. In the search bar, search for **Container registries** **(1)** and select **Container registries** **(2)**.
 
    ![](../media/17-06-2024(1).png)
 
