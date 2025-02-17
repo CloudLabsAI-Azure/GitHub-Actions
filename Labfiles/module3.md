@@ -373,7 +373,7 @@ In this task, you'll set up a GitHub action using the Matrix strategy to run the
 
 14. Click on the **Create matrix.yml** action. This configuration allows you to ensure your project is tested on multiple operating systems using Python 3.12, ensuring broader compatibility and seamless identification of environment-specific issues at an early stage.
 
-      ![](../media/matrix-output.png)
+      ![](../media/action1.png)
 
 ### Task 4: Using Artifacts and Dependencies in Workflows
 
