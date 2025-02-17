@@ -55,7 +55,7 @@ In this task, you'll connect your Azure DevOps project's board to your GitHub re
 
     - Navigate to `https://github.com/marketplace/azure-boards`.
 
-    - Click on the ... from the top right and select **Configure account access**.
+    - Click on the Ellipsis(...) from the top right and select **Configure account access**.
 
         ![](../media/action8.png)      
 
