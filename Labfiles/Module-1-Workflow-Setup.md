@@ -23,6 +23,10 @@ In this task, you'll learn to create a GitHub repository.
 
    ![](../media/2dgn154.png) 
 
+   >**Note:** In case you're prompted with Two factor authentication, please click on **Remind me Tomorrow**.
+
+      ![](../media/action15.png) 
+
 1. In the upper-right corner, navigate to the user menu and select **Your repositories** **(1)**.
 
    ![The `New Repository` creation form in GitHub.](../media/my_repos.png "New Repository Creation Form")
