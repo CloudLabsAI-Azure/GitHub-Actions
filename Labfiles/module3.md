@@ -583,6 +583,8 @@ Optimizing workflow performance by caching dependencies can significantly improv
 
      ![](../media/ExampleScript-commit-risk.png)
 
+      > **Note:** If you're not prompted to select a reason for allowing the secret, please click on **Add Secret** and proceed.
+
 1. **Secret allowed. You can now commit these changes**. In the editor window, click on **Commit changes**.
 
 1. In the **Commit changes** pop-up window, click on the **Commit changes** button.
