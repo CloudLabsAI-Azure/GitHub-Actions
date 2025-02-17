@@ -58,8 +58,6 @@
 
 1. Click on the **Actions** **(1)** tab. Verify if the workflow has been executed successfully **(2)**.
 
-   ![](../media/workflow-oidc1.png)
-
    >**Note**: 
 This GitHub Actions workflow demonstrates the best practice of securely using Azure secrets by employing GitHub Secrets. The workflow, triggered on every push, runs on ubuntu-latest and performs several steps, including logging into Azure with a service principal secret, executing an Azure CLI script, and running an Azure PowerShell script.
 
