@@ -375,13 +375,6 @@ In this task, you'll set up a GitHub action using the Matrix strategy to run the
 
       ![](../media/matrix-output.png)
 
->**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
-> - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
-> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
-
-   <validation step="4845f348-0a38-4a76-abbd-5b3f75cf6c9e" />
-
 ### Task 4: Using Artifacts and Dependencies in Workflows
 
 Optimizing workflow performance by caching dependencies can significantly improve the execution time of your workflows. By caching dependencies, you can avoid unnecessary downloads and installations, resulting in faster and more efficient workflows.
