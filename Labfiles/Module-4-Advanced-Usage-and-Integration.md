@@ -2,25 +2,19 @@
 
 ## Lab Objectives
 
-- Task 1: OIDC to Securely Connect to the Cloud
+- Task 1: Securely Connect to the Cloud
 - Task 2: Debugging and Monitoring Workflow
 - Task 3: Agent Infrastructure [Read Only]
 
-### Task 1: OIDC to Securely Connect to the Cloud
-
-OpenID Connect (OIDC) allows your GitHub Actions workflows to access resources in Azure without needing to store the Azure credentials as long-lived GitHub secrets. This gives an overview of how to configure Azure to trust GitHub's OIDC as a federated identity and includes a workflow example for the Azure/Login action that uses tokens to authenticate to Azure and access resources.
+### Task 1: Securely Connect to the Cloud
 
 1. Navigate back to the `github-action` repository. 
 
 1. Navigate to the **Code** **(1)** option and click on the **.github/workflows** **(2)** folder.
 
-   ![](../media/4th-oidc-click.png)
-
 1. In the **.github/workflows** folder, click on **Add file** **(1)**, and select **+ Create new file** **(2)**.
 
-   ![](../media/4th-oidc.png)
-
-1. Provide the file name as **OIDC_action.yml** **(1)**. In the editor, **copy and paste** **(2)** the below script, and click on **Commit changes** **(3)**.
+1. Provide the file name as **action.yml** **(1)**. In the editor, **copy and paste** **(2)** the below script, and click on **Commit changes** **(3)**.
 
     ```
     # File: .github/workflows/workflow.yml 
@@ -30,7 +24,7 @@ OpenID Connect (OIDC) allows your GitHub Actions workflows to access resources i
         branches:
           - main
         paths:
-          - '.github/workflows/OIDC_action.yml'
+          - '.github/workflows/action.yml'
     
     name: Run Azure Login With a Service Principal Secret
     
@@ -68,13 +62,6 @@ OpenID Connect (OIDC) allows your GitHub Actions workflows to access resources i
 
    >**Note**: 
 This GitHub Actions workflow demonstrates the best practice of securely using Azure secrets by employing GitHub Secrets. The workflow, triggered on every push, runs on ubuntu-latest and performs several steps, including logging into Azure with a service principal secret, executing an Azure CLI script, and running an Azure PowerShell script.
-
->**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
-> - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
-> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
-
-   <validation step="de0bb9f2-4bc6-4c9b-9b97-f8d23a28378a" />
 
 ### Task 2: Debugging and Monitoring Workflow
 
