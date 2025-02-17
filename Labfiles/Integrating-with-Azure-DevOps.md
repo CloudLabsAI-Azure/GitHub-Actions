@@ -50,6 +50,22 @@ In this task, you'll connect your Azure DevOps project's board to your GitHub re
     - `Zip`: Provide the postal code.
 
     ![](../media/action3.png)
+
+    >**Note:** If you're prompted with the billing information is already added for this user, please follow the below steps:
+
+    - Navigate to `https://github.com/marketplace/azure-boards`.
+
+    - Click on the ... from the top right and select **Configure account access**.
+
+        ![](../media/action8.png)      
+
+    - Click on **Configure**.
+
+        ![](../media/action9.png) 
+
+    - Scroll down and click on **Uninstall** for Azure Boards.
+
+        ![](../media/action10.png) 
     
 1. On the next page, select **Issue plan changes and begin installation**.
 
@@ -59,9 +75,9 @@ In this task, you'll connect your Azure DevOps project's board to your GitHub re
    
        ![](../media/2dg51.png)
    
-     - Click on the **only select repositories (1)** option. Select the lab files repository **(2)** `github-action` **(3)** that you created earlier and click on **Install & Authorize (4)**.
+     - Click on the **only select repositories (1)** option. Select the lab files repository `github-action` **(2)** that you created earlier and click on **Install & Authorize (3)**.
 
-         ![](../media/action4.png)
+         ![](../media/action7.png)
 
     - Enter the Cloudlabs **Email**. <inject key="AzureAdUserEmail"></inject>
      
@@ -69,9 +85,9 @@ In this task, you'll connect your Azure DevOps project's board to your GitHub re
 
         ![](../media/img10.png).
 
-1. Click on the **only select repositories (1)** option, select the lab files repository **(2)**, `github-action` **(3)**, that you created earlier, and click on **Install & Authorize (4)**.
+1. Click on the **only select repositories (1)** option, select the lab files repository , `github-action` **(2)**, that you created earlier, and click on **Install & Authorize (3)**.
 
-   ![](../media/action4.png)
+   ![](../media/action7.png)
 
 1. Enter the cloudlabs **Email**. <inject key="AzureAdUserEmail"></inject>
 
@@ -81,7 +97,7 @@ In this task, you'll connect your Azure DevOps project's board to your GitHub re
 
 1. Provide the **CAPTCHA (1)** as per the image and click on **Continue (2)**.
 
-     ![](../media/ga6-2.png).
+     ![](../media/action6.png).
 
 1. You will be re-directed to the **Boards**.
 
