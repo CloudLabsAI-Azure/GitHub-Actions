@@ -40,7 +40,7 @@ In this task, you'll connect your Azure DevOps project's board to your GitHub re
 
 1. Sign in with the GitHub credentials.
 
-1. Please enter the billing details:
+1. Please enter the billing details and click on **Save billing information**:
 
     - `First name`: <inject key="AzureAdUserEmail"></inject>
     - `Last name`: <inject key="DeploymentID"></inject>
@@ -51,7 +51,7 @@ In this task, you'll connect your Azure DevOps project's board to your GitHub re
 
     ![](../media/billing_1.png)
     
-1. On the next page, select **Complete order and begin installation**.
+1. On the next page, select **Issue plan changes and begin installation**.
 
       > **Note**:If the option above appears, proceed directly to Step 7. If it does not, follow the steps below.
    
