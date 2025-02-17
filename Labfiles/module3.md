@@ -380,7 +380,7 @@ In this task, you'll set up a GitHub action using the Matrix strategy to run the
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
 
-   <validation step="ba1751b9-d16b-47ac-9282-a6ecc8cb4870" />
+   <validation step="4845f348-0a38-4a76-abbd-5b3f75cf6c9e" />
 
 ### Task 4: Using Artifacts and Dependencies in Workflows
 
@@ -447,13 +447,6 @@ Optimizing workflow performance by caching dependencies can significantly improv
 5. Click on the **Actions** **(1)** button. Verify the workflow has been executed successfully by spotting the green badge. Select the newly created workflow **Update nodejs_ci.yml** **(2)**.
 
     ![](../media/optimize4.png)
-
->**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
-> - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
-> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
-
-   <validation step="4c2f79e2-cb6f-4f65-bfc3-044a87a12b32" />
 
 ### Task 5: Code Scanning and Vulnerability Detection
 
