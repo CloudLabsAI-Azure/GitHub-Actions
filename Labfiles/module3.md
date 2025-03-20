@@ -18,7 +18,7 @@ Rather than copying and pasting from one workflow to another, you can make workf
 
 1. From the **gitHub-action** repository, navigate to the **.github/workflows** folder, click on **Add file** **(1)**, and select the **+ Create new file** **(2)** option.
 
-    ![](../media/4th-oidc.png)
+    ![](../media/create-yml-file.png)
 
 1. Copy the code given below, **paste (1)** it in the window name the file as **reusable-print-message.yml (2)** and click on **Commit changes (3)**.
 
@@ -47,17 +47,17 @@ Rather than copying and pasting from one workflow to another, you can make workf
            run: echo "Hi, this message is from primary workflow"
    ```
 
-   ![](../media/ga3.png)
+   ![](../media/reusable-print-message-create.png)
 
 1. In the **Commit changes (1)** pop-up window, click on the **Commit changes (2)** option.
 
-   ![](../media/env25.png)
+   ![](../media/reusable-print-message-commit.png)
 
    > **Note:** This GitHub Actions workflow template, named "Reusable Print Message," is designed to be a reusable component triggered by another workflow using **workflow_call**. It requires a string input parameter **message**. The workflow runs a job called **print-message** on an Ubuntu environment, which includes a step to print the received message to the workflow log.
 
 1. Again, navigate to `.github/workflows`, Click on the **Add file (1)** dropdown and select **+ Create new file (2)**.
 
-   ![](../media/env26.png)
+   ![](../media/create-yml-file.png)
 
 1. Copy the code given below, paste it into the window, and name the file **caller-workflows.yml** and click on **Commit changes**.
 
@@ -82,19 +82,19 @@ Rather than copying and pasting from one workflow to another, you can make workf
          message: "Hello from the caller workflow!"
     ```
 
-   ![](../media/ga3-1.png)   
+   ![](../media/caller-workflows-create.png)   
 
 1. On the **Commit changes (1)** pop-up window, click on the **Commit changes (2)** option.
 
-   ![](../media/env27.png)
+   ![](../media/caller-workflows-commit.png)
 
 1. Now, navigate to the **Actions (1)** tab and select **Create caller-workflow.yml (2)**. 
 
-   ![](../media/env29.png)
+   ![](../media/caller-workflows-final.png)
 
 1. Select the **print-message (1)** option from the side-blade and **expand (2)** the same in the output window. You'll see that the message from `reusable-print-message.yml` is fetched by the caller workflow. This is how the concept of reusable workflows in GitHub Actions works.
 
-   ![](../media/env30.png)
+   ![](../media/caller-workflows-output.png)
 
    > **Note:** This GitHub Actions workflow named "Caller Workflow" triggers on pushes to the main branch and manual dispatch for changes to the **.github/workflows/caller-workflows.yml** file. It calls a reusable workflow defined in **reusable-print-message.yml**, passing the message "Hello from the caller workflow!".
 

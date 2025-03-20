@@ -102,17 +102,17 @@ Securing sensitive data like API keys and credentials is crucial to protecting y
     CMD ["nginx", "-g", "daemon off;"]
     ```
 
-    ![](../media/env57.png)
+    ![](../media/dockerfile-creation.png)
 
 1. In the **Commit changes** pop-up, click on the **Commit changes** button.
 
-    ![](../media/17-06-2024(3).png)
+    ![](../media/dockerfile-commit.png)
 
     >**Note:** This Dockerfile utilizes the latest official Nginx image as its base. It copies an **index.html** file into the Nginx container's default web root directory. Port 80 is exposed to allow external access to the container, and the container launches Nginx with the command **nginx -g 'daemon off;'** to keep it running in the foreground.
 
 1. Again, from the **Code** **(1)** tab in GitHub, click on **Add file** **(2)** and select the **+ Create new file** **(3)** option.
     
-    ![](../media/ex2-task2-step18.png)
+    ![](../media/create-new-file.png)
 
 1. Provide the file name as **index.html (1)**. In the editor, **copy and paste (2)** the script below, then click on **Commit changes (3)**.
 
@@ -168,11 +168,11 @@ Securing sensitive data like API keys and credentials is crucial to protecting y
     </html>
     ```
 
-    ![](../media/17-06-2024(7).png)
+    ![](../media/index-create.png)
 
 1. In the **Commit changes** pop-up, click on the **Commit changes** button.
 
-    ![](../media/17-06-2024(4).png)
+    ![](../media/index-commit.png)
 
 1. From the GitHub **Code** **(1)** tab, navigate to the **.github/workflows** **(2)** folder.
 
@@ -180,7 +180,7 @@ Securing sensitive data like API keys and credentials is crucial to protecting y
 
 1. In the **.github/workflows** folder, click on **Add file** **(1)**, and click on **+ Create new file** **(2)**.
 
-    ![](../media/4th-oidc.png)
+    ![](../media/create-yml-file.png)
 
 1. In the editor, update the code with the below-provided code, replace **{Login_server}** from lines 40 and 50 with **Azure Container registry Login server**, and replace **{Registry name}** from line 45 with **Azure Container registry Registry name**.
 
@@ -211,7 +211,7 @@ Securing sensitive data like API keys and credentials is crucial to protecting y
         steps:
         # Step to checkout the repository
         - name: Checkout repository
-          uses: actions/checkout@v2
+          uses: actions/checkout@v4
 
         # Step to log in to Azure using the Azure CLI GitHub Action
         - name: Log in to Azure CLI
@@ -239,19 +239,19 @@ Securing sensitive data like API keys and credentials is crucial to protecting y
             docker push {Login_server}/my-app:latest  
     ```
 
-    ![](../media/21-06-2024(10).png)
+    ![](../media/update-acrname.png)
 
 1. Provide the file name as **docker.yml (1)**. In the editor, **review(2)** the script present, then click on **Commit changes (3).**
 
-   ![](../media/21-06-2024(11).png)
+   ![](../media/docker-yml-create.png)
    
 1. In the **Commit changes** pop-up window, click on the **Commit changes** option.
 
-    ![](../media/commit.png)
+    ![](../media/docker-yml-commit.png)
 
 1. Click on **Actions**, select the **Create docker.yml** action, and verify the workflow has been executed successfully.
 
-   ![](../media/env38.png)
+   ![](../media/docker-yml-result.png)
 
    >**Note:** This GitHub Actions workflow, named "Build and Push Docker Image to ACR," automates the process of building and pushing a Docker image to Azure Container Registry (ACR) when triggered by pushes or pull requests to the main branch, or manually **(`workflow_dispatch`)**. It runs on an Ubuntu environment and includes steps to checkout the repository, authenticate with Azure using stored credentials, list files, build a Docker image tagged as **`{Login_server}/my-app:latest`**, log in to the Azure Container Registry, and finally push the built Docker image to the registry.
 
@@ -288,7 +288,7 @@ One of the key features that make GitHub Actions flexible and robust is the abil
 
 1. In the **.github/workflows** folder, click on **Add files** **(1)**, and select **+ Create new file** **(2)**.
 
-      ![](../media/4th-oidc.png)
+      ![](../media/create-yml-file.png)
 
 1. Provide the file name as **conditional.yml (1)**. In the editor, **copy and paste (2)** the script below, then click on **Commit changes (3).**
 
@@ -317,7 +317,7 @@ One of the key features that make GitHub Actions flexible and robust is the abil
         steps:
         # Step to checkout the repository
         - name: Checkout
-          uses: actions/checkout@v2
+          uses: actions/checkout@v4
         # Step to run a one-line script
         - name: Run a one-line script
           run: echo Hello, world!
@@ -331,13 +331,13 @@ One of the key features that make GitHub Actions flexible and robust is the abil
         steps:
         # Step to checkout the repository
         - name: Checkout
-          uses: actions/checkout@v2
+          uses: actions/checkout@v4
         # Step to run a different one-line script
         - name: Run a different one-line script
           run: echo Hello again, world!
     ```
 
-      ![](../media/21-06-2024(12).png)
+      ![](../media/conditional-create.png)
 
 1. In the **Commit changes** pop-up, click on the **Commit changes** button.
 
