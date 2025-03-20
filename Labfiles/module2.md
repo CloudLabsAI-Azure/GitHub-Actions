@@ -82,7 +82,7 @@ Securing sensitive data like API keys and credentials is crucial to protecting y
    
 1. Navigate to the **Code** **(1)** tab, click on **Add file** **(2)**, and then select the **+ Create new file** **(3)** option.
     
-    ![](../media/ex2-task2-step18.png)
+    ![](../media/create-new-file.png)
     
 1. Provide the file name as **Dockerfile (1)**. In the editor, **copy and paste (2)** the script below, then click on **Commit changes (3)**.
 

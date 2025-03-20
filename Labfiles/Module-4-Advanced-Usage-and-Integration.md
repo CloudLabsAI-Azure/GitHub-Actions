@@ -2,11 +2,50 @@
 
 ## Lab Objectives
 
-- Task 1: Securely Connect to the Cloud
-- Task 2: Debugging and Monitoring Workflow
-- Task 3: Agent Infrastructure [Read Only]
+- Task 1: OIDC to Securely Connect to the Cloud
+- Task 2: Securely Connect to the Cloud
+- Task 3: Debugging and Monitoring Workflow
+- Task 4: Agent Infrastructure [Read Only]
 
-### Task 1: Securely Connect to the Cloud
+### Task 1: OIDC to Securely Connect to the Cloud
+
+OpenID Connect (OIDC) allows your GitHub Actions workflows to access resources in Azure without needing to store the Azure credentials as long-lived GitHub secrets. This gives an overview of how to configure Azure to trust GitHub's OIDC as a federated identity and includes a workflow example for the Azure/Login action that uses tokens to authenticate to Azure and access resources.
+
+1. Navigate back to the `github-action` repository. 
+
+1. Navigate to the **Code** **(1)** option and click on the **.github/workflows** **(2)** folder.
+
+   ![](../media/4th-oidc-click.png)
+
+1. In the **.github/workflows** folder, click on **Add file** **(1)**, and select **+ Create new file** **(2)**.
+
+   ![](../media/4th-oidc.png)
+
+1. Provide the file name as **OIDC_action.yml** **(1)**. In the editor, **copy and paste** **(2)** the below script, and click on **Commit changes** **(3)**.
+
+    ```
+    # File: .github/workflows/workflow.yml 
+@@ -30,7 +24,7 @@ OpenID Connect (OIDC) allows your GitHub Actions workflows to access resources i
+        branches:
+          - main
+        paths:
+          - '.github/workflows/OIDC_action.yml'
+    
+    name: Run Azure Login With a Service Principal Secret
+    
+@@ -69,13 +63,6 @@ OpenID Connect (OIDC) allows your GitHub Actions workflows to access resources i
+   >**Note**: 
+This GitHub Actions workflow demonstrates the best practice of securely using Azure secrets by employing GitHub Secrets. The workflow, triggered on every push, runs on ubuntu-latest and performs several steps, including logging into Azure with a service principal secret, executing an Azure CLI script, and running an Azure PowerShell script.
+
+>**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
+
+   <validation step="de0bb9f2-4bc6-4c9b-9b97-f8d23a28378a" />
+
+
+### Task 2: Securely Connect to the Cloud
 
 1. Navigate back to the `github-action` repository. 
 
@@ -61,7 +100,7 @@
    >**Note**: 
 This GitHub Actions workflow demonstrates the best practice of securely using Azure secrets by employing GitHub Secrets. The workflow, triggered on every push, runs on ubuntu-latest and performs several steps, including logging into Azure with a service principal secret, executing an Azure CLI script, and running an Azure PowerShell script.
 
-### Task 2: Debugging and Monitoring Workflow
+### Task 3: Debugging and Monitoring Workflow
 
 Debugging and monitoring workflows in GitHub Actions involve using detailed logging, GitHub's job status and logs, and notifications for failures to identify and resolve issues. Integrating external logging services and setting up metrics and alerts can further enhance visibility and proactive issue management, ensuring more reliable and efficient development cycles.
 
@@ -133,7 +172,7 @@ In this task, you'll analyze and resolve an error with the workflow.
 
    <validation step="3534d8a9-a527-4d7a-be8d-4afc54ba6cec" />
 
-### Task 3: Agent Infrastructure [Read Only]
+### Task 4: Agent Infrastructure [Read Only]
 
 #### About self-hosted runners
 
