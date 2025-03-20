@@ -92,11 +92,11 @@ In this task, you'll create a simple GitHub action and understand the components
 
 1. In the `Get started with GitHub Actions` page, click on the **Configure** button available in the **Simple Workflow** section.
 
-      ![](../media/env15.png)
+      ![](../media/basic-creation.png)
 
 1. You'll be able to see a very simple workflow that prints a few text sentences as output.    
 
-      ![](../media/21-06-2024(8).png)
+      ![](../media/basic-creation1.png)
 
      > **Note**: This workflow provides a basic template for setting up CI with GitHub Actions. It checks out the repository code, runs a simple one-line script, and then runs a multi-line script. You can expand this workflow by adding more steps to build, test, and deploy your project. Here's the complete explanation of the workflow file.
 
@@ -174,11 +174,11 @@ In this task, you'll create a simple GitHub action and understand the components
                 echo test, and deploy your project.
       ```
 
-      ![](../media/21-06-2024(7).png)
+      ![](../media/hello-word-create.png)
 
 1. In the **Commit Changes** pop-up window, click on the **Commit changes** option.
 
-      ![](../media/env42.png)
+      ![](../media/hello-word-commit.png)
 
 1. Click on **Actions** **(1)**, once the workflow is succeeded, click on Workflow: **Create hello-action.yml** **(2)**.
 
@@ -240,7 +240,7 @@ In GitHub Actions workflows, you define jobs and steps to orchestrate the tasks 
               steps:
               # Step to checkout the code from the repository
               - name: Checkout code
-                uses: actions/checkout@v2
+                uses: actions/checkout@v4
               # Step to run a simple script
               - name: Run a script
                 run: echo "Hello, world!"
@@ -251,12 +251,13 @@ In GitHub Actions workflows, you define jobs and steps to orchestrate the tasks 
               steps:
               # Step to checkout the code from the repository
               - name: Checkout code
-                uses: actions/checkout@v2
+                uses: actions/checkout@v4
               # Step to run another simple script
               - name: Run another script
                 run: echo "Hello, again!"
       ```
-      ![](../media/21-06-2024(9).png)
+      
+      ![](../media/jobs-create.png)
    
  1. In the **Commit changes** pop-up window, click on the **Commit changes (1)** option.
 

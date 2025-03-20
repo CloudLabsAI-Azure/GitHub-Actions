@@ -26,7 +26,7 @@ Securing sensitive data like API keys and credentials is crucial to protecting y
 1. Under the **basics** tab, add the following details:
 
     - **Subscription**: Select the default subscription.
-    - **Resource Group**: Select **github-action-<inject key="DeploymentID" enableCopy="false"/>** **(1)**
+    - **Resource Group**: Select **github-action** **(1)**
     - **Registry Name**: Enter **gacontainer<inject key="DeploymentID" enableCopy="false"/>** **(2)**
     - **Location**: Select the default **location.** **(3)**
     - **Pricing Plan**: Choose **Standard** **(4)**
