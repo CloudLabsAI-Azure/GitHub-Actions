@@ -117,7 +117,7 @@ In this task, you'll fork a public repository and create a GitHub action using M
 
 1. Navigate to the [sample-node-project](https://github.com/acemilyalcin/sample-node-project) repo and click on **Fork**.
 
-    ![](../media/21-06-2024(1).png)
+    ![](../media/sample-node-project-fork.png)
 
     > **Note**: If a fork already exists, follow the below steps to delete the repository.
     
@@ -147,7 +147,7 @@ In this task, you'll fork a public repository and create a GitHub action using M
 
 1. Navigate to the **Actions** **(1)** directory in your repository. In the `Get started with GitHub Actions` window, click on the **Set up a workflow yourself (2)** option.
 
-     ![](../media/newaction.png)
+     ![](../media/sample-node-project-fork1.png)
 
 1. Include the file name as **nodejs_ci.yml** **(1)**. In the editor, **copy and paste** **(2)** the below script, and click on the **Commit changes** **(3)** option.
 
@@ -174,11 +174,11 @@ In this task, you'll fork a public repository and create a GitHub action using M
 
         steps:
           # Step to checkout the repository
-          - uses: actions/checkout@v3
+          - uses: actions/checkout@v4
 
           # Step to cache Node.js dependencies
           - name: Cache Node.js dependencies
-            uses: actions/cache@v2
+            uses: actions/cache@v4
             with:
               path: ~/.npm
               key: ${{ runner.os }}-node-${{ matrix.node-version }}-${{ hashFiles('${{ env.OUTPUT_PATH }}/package-lock.json') }}
@@ -187,12 +187,12 @@ In this task, you'll fork a public repository and create a GitHub action using M
 
           # Step to set up the specified version of Node.js
           - name: Use Node.js ${{ matrix.node-version }}
-            uses: actions/setup-node@v3
+            uses: actions/setup-node@v4
             with:
               node-version: ${{ matrix. Node-version }}
     ```
 
-    ![](../media/21-06-2024(15).png)
+    ![](../media/nodejs-create.png)
 
 1. In the **Commit changes** pop-up window, click on the **Commit changes** option.
 
@@ -200,7 +200,7 @@ In this task, you'll fork a public repository and create a GitHub action using M
 
 1. Click on the **Actions** **(1)** tab. Verify the workflow has been executed successfully by looking for the green badge. Select the newly created workflow, **nodejs_ci.yml** **(2)**.
 
-    ![](../media/ga3-2.png)
+    ![](../media/nodejs-action.png)
 
     > **Note:** This GitHub Actions workflow, named "Node.js CI," is triggered by pushes to the main branch affecting the **.github/workflows/nodejs_ci.yml** file. It sets up a job that runs on an Ubuntu environment and utilizes a matrix strategy to specify Node.js version 18.x. The workflow includes steps to check out the repository, cache Node.js dependencies to optimize workflow performance, and set up the specified Node.js version using the actions/setup-node action.
 
@@ -235,15 +235,15 @@ In this task, you'll set up a GitHub action using the Matrix strategy to run the
     pytest
     ```
 
-    ![](../media/21-06-2024(16).png)
+    ![](../media/requiment.png)
    
 4. In the **Commit changes** pop-up window, click on the **Commit changes** option.
 
-     ![](../media/21-06-2024(17).png)
+     ![](../media/requiment-commit.png)
 
 5. Click on the **Add File** **(1)** button and select the **+ Create new file** **(2)** option.
 
-     ![](../media/21-06-2024(3).png)
+     ![](../media/create-newfile.png)
 
 6. Provide the file name as **tests/test_sample.py** **(1)**. In the editor, **copy and paste** **(2)** the below script, and click on the **Commit changes** **(3)** option.
 
@@ -254,11 +254,11 @@ In this task, you'll set up a GitHub action using the Matrix strategy to run the
         print("Completed test_sample successfully")
     ```
 
-      ![](../media/21-06-2024(18).png)
+      ![](../media/test-sample.png)
 
 7. In the **Commit changes** pop-up window, click on the **Commit changes** option.
 
-     ![](../media/21-06-2024(4).png)
+     ![](../media/test-sample-commit.png)
 
 8. Navigate to the **Code** **(1)** tab and click on the **.github/workflows** **(2)** folder.
 
@@ -293,10 +293,10 @@ In this task, you'll set up a GitHub action using the Matrix strategy to run the
                     python-version: [3.12]
             steps:
                 - name: Checkout repository
-                  uses: actions/checkout@v2
+                  uses: actions/checkout@v4
 
                 - name: Set up Python ${{ matrix.python-version }}
-                  uses: actions/setup-python@v2
+                  uses: actions/setup-python@v5
                   with:
                       python-version: ${{ matrix.python-version }}
 
@@ -316,10 +316,10 @@ In this task, you'll set up a GitHub action using the Matrix strategy to run the
                     python-version: [3.12]
             steps:
                 - name: Checkout repository
-                  uses: actions/checkout@v2
+                  uses: actions/checkout@v4
 
                 - name: Set up Python ${{ matrix.python-version }}
-                  uses: actions/setup-python@v2
+                  uses: actions/setup-python@v5
                   with:
                       python-version: ${{ matrix.python-version }}
 
@@ -343,10 +343,10 @@ In this task, you'll set up a GitHub action using the Matrix strategy to run the
                     python-version: [3.12]
             steps:
                 - name: Checkout repository
-                  uses: actions/checkout@v2
+                  uses: actions/checkout@v4
 
                 - name: Set up Python ${{ matrix.python-version }}
-                  uses: actions/setup-python@v2
+                  uses: actions/setup-python@v5
                   with:
                       python-version: ${{ matrix.python-version }}
 
@@ -361,19 +361,19 @@ In this task, you'll set up a GitHub action using the Matrix strategy to run the
 
     ```
 
-    ![](../media/21-06-2024(19).png)
+    ![](../media/matrix-create.png)
 
     > **Note**: This CI configuration uses GitHub Actions to run tests on multiple OSs (Ubuntu, Windows, and macOS) with Python 3.12. It triggers push and pull requests to the main branch, checks out the code, sets up Python, installs dependencies, and runs tests with pytest, ensuring cross-platform compatibility.
 
 12. In the **Commit changes** pop-up window, click on the **Commit changes** option.
 
-      ![](../media/21-06-2024(20).png)
+      ![](../media/matrix-create-commit.png)
 
 13. Click on the **Actions** **(1)** tab. Verify that the **Create matrix.yml** workflow has been executed successfully.
 
 14. Click on the **Create matrix.yml** action. This configuration allows you to ensure your project is tested on multiple operating systems using Python 3.12, ensuring broader compatibility and seamless identification of environment-specific issues at an early stage.
 
-      ![](../media/action1.png)
+      ![](../media/matrix-create-result.png)
 
 >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
