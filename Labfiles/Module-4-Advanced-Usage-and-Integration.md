@@ -25,17 +25,14 @@ OpenID Connect (OIDC) allows your GitHub Actions workflows to access resources i
 
     ```
     # File: .github/workflows/workflow.yml 
-@@ -30,7 +24,7 @@ OpenID Connect (OIDC) allows your GitHub Actions workflows to access resources i
         branches:
           - main
         paths:
           - '.github/workflows/OIDC_action.yml'
+    ```
     
-    name: Run Azure Login With a Service Principal Secret
     
-@@ -69,13 +63,6 @@ OpenID Connect (OIDC) allows your GitHub Actions workflows to access resources i
-   >**Note**: 
-This GitHub Actions workflow demonstrates the best practice of securely using Azure secrets by employing GitHub Secrets. The workflow, triggered on every push, runs on ubuntu-latest and performs several steps, including logging into Azure with a service principal secret, executing an Azure CLI script, and running an Azure PowerShell script.
+   >**Note**: This GitHub Actions workflow demonstrates the best practice of securely using Azure secrets by employing GitHub Secrets. The workflow, triggered on every push, runs on ubuntu-latest and performs several steps, including logging into Azure with a service principal secret, executing an Azure CLI script, and running an Azure PowerShell script.
 
 >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
