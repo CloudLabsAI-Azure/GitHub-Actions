@@ -215,7 +215,7 @@ Securing sensitive data like API keys and credentials is crucial to protecting y
 
         # Step to log in to Azure using the Azure CLI GitHub Action
         - name: Log in to Azure CLI
-          uses: azure/login@v1
+          uses: azure/login@v2
           with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
 

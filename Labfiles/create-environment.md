@@ -24,20 +24,22 @@ In this task, you'll set up a GitHub environment and use it as a GitHub action.
    - Provide the name as **action-environment** and click on **configure environment**.
      ![](../media/configure_env1.png) 
 
-   - In the **Deployment protection rules** section, check the **Required reviewers** option. Search for the **GitHub username**, and add the user. You can also find the username on the **GitHub homepage**.
+   - In the **Deployment protection rules** section, check the **Required reviewers (1)** option. Search for the **GitHub username (2)**, and add the user. You can also find the username on the **GitHub homepage**.
+
+     ![](../media/env2(1)b.png)
 
 **Wait Timer**
-   - Select the **Wait timer (2)** check box and set it to 2 minutes.
+   - Select the **Wait timer (2)** check box and set it to **2** minutes.
 
-     ![](../media/env2(1).png)
+     ![](../media/env2(1)a.png)
 
      - Click on **Save protection rules** to save the rules.
 
-     ![](../media/env39.png)
+     ![](../media/env9a.png)
 
    - Now, scroll down to **Environment Secrets** and click on **Add environment secret**.
 
-     ![](../media/env9.png)
+     ![](../media/env9b.png)
 
    **Environment Secrets**
 
@@ -61,7 +63,7 @@ In this task, you'll set up a GitHub environment and use it as a GitHub action.
    - Name: Enter **AZURE_CREDENTIALS** **(1)**
    - Value: Paste the service principal details in **JSON format (2)**. Click on **Add secret (3)**.
 
-     ![](../media/env10(1).png)
+     ![](../media/env10(1)a.png)
 
 **Environment Variable**
 
@@ -73,15 +75,15 @@ In this task, you'll set up a GitHub environment and use it as a GitHub action.
 
    - Navigate back to the GitHub dashboard. Under the **Environment variables** section, click on **Add environment variable**.
    
-     ![](../media/env11.png)
+      ![](../media/env11a.png)
 
    - Provide the name as **REGISTRY_NAME (1)**, paste the **value (2)** you copied from in earlier steps, and click on **Add Variable (3)**.
 
-     ![](../media/env40.png)
+     ![](../media/env40a.png)
 
    - Similarly, click again on the **Add environment variable**. Provide the name as **LOGIN_SERVER (1)** and paste the **login server value (2)** copied in earlier steps. Finally, click on **Add varianble (3)**.
 
-     ![](../media/env41.png)
+     ![](../media/env41a.png)
 
    - Please make sure that you've completed all the steps for creating a GitHub Environment. 
 
@@ -113,11 +115,11 @@ In this task, you'll set up a GitHub environment and use it as a GitHub action.
         steps:
         # Checkout the repository
         - name: Checkout repository
-          uses: actions/checkout@v2
+          uses: actions/checkout@v4
     
         # Log in to Azure
         - name: Log in to Azure CLI
-          uses: azure/login@v1
+          uses: azure/login@v2
           with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
     
