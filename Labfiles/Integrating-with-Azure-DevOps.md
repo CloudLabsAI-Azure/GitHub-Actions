@@ -38,7 +38,7 @@ In this task, you'll connect your Azure DevOps project's board to your GitHub re
 
     >**Note:** If the **Install it for free** button is grayed out, please proceed to the next step.
 
-1. Sign in with the GitHub credentials.
+1. Sign in with the GitHub credentials and then click on the edit button.
 
 1. Please enter the billing details and click on **Save billing information**:
 

@@ -147,7 +147,7 @@ In this task, you'll fork a public repository and create a GitHub action using M
 
 1. Navigate to the **Actions** **(1)** directory in your repository. In the `Get started with GitHub Actions` window, click on the **Set up a workflow yourself (2)** option.
 
-     ![](../media/sample-node-project-fork1.png)
+    ![](../media/sample-node-project-fork1a.png)
 
 1. Include the file name as **nodejs_ci.yml** **(1)**. In the editor, **copy and paste** **(2)** the below script, and click on the **Commit changes** **(3)** option.
 
@@ -170,7 +170,7 @@ In this task, you'll fork a public repository and create a GitHub action using M
 
         strategy:
           matrix:
-            node-version: [18.x]
+            node-version: ['latest']
 
         steps:
           # Step to checkout the repository
@@ -290,7 +290,7 @@ In this task, you'll set up a GitHub action using the Matrix strategy to run the
             runs-on: ubuntu-latest
             strategy:
                 matrix:
-                    python-version: [3.12]
+                    python-version: [3.13]
             steps:
                 - name: Checkout repository
                   uses: actions/checkout@v4
@@ -313,7 +313,7 @@ In this task, you'll set up a GitHub action using the Matrix strategy to run the
             runs-on: windows-latest
             strategy:
                 matrix:
-                    python-version: [3.12]
+                    python-version: [3.13]
             steps:
                 - name: Checkout repository
                   uses: actions/checkout@v4
@@ -340,7 +340,7 @@ In this task, you'll set up a GitHub action using the Matrix strategy to run the
             runs-on: macos-latest
             strategy:
                 matrix:
-                    python-version: [3.12]
+                    python-version: [3.13]
             steps:
                 - name: Checkout repository
                   uses: actions/checkout@v4
@@ -363,7 +363,7 @@ In this task, you'll set up a GitHub action using the Matrix strategy to run the
 
     ![](../media/matrix-create.png)
 
-    > **Note**: This CI configuration uses GitHub Actions to run tests on multiple OSs (Ubuntu, Windows, and macOS) with Python 3.12. It triggers push and pull requests to the main branch, checks out the code, sets up Python, installs dependencies, and runs tests with pytest, ensuring cross-platform compatibility.
+    > **Note**: This CI configuration uses GitHub Actions to run tests on multiple OSs (Ubuntu, Windows, and macOS) with Python 3.13. It triggers push and pull requests to the main branch, checks out the code, sets up Python, installs dependencies, and runs tests with pytest, ensuring cross-platform compatibility.
 
 12. In the **Commit changes** pop-up window, click on the **Commit changes** option.
 
@@ -422,10 +422,10 @@ Optimizing workflow performance by caching dependencies can significantly improv
             runs-on: ubuntu-latest
 
             steps:
-                - uses: actions/checkout@v3
+                - uses: actions/checkout@v4
 
                 - name: Cache Node.js dependencies
-                  uses: actions/cache@v2
+                  uses: actions/cache@v4
                   with:
                       path: ~/.npm
                       key: ${{ runner.os }}-node-${{ hashFiles('${{ env.OUTPUT_PATH }}/package-lock.json') }}
@@ -433,9 +433,9 @@ Optimizing workflow performance by caching dependencies can significantly improv
                           ${{ runner.os }}-node-
 
                 - name: Use Node.js
-                  uses: actions/setup-node@v3
+                  uses: actions/setup-node@v4
                   with:
-                      node-version: 18.x
+                      node-version: 'latest'
     ```
     
     ![](../media/21-06-2024(21).png)
@@ -448,14 +448,6 @@ Optimizing workflow performance by caching dependencies can significantly improv
 
     ![](../media/optimize4.png)
 
-
->**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
-> - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
-> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
-
-   <validation step="4c2f79e2-cb6f-4f65-bfc3-044a87a12b32" />
-
 ### Task 5: Code Scanning and Vulnerability Detection
 
 1. Navigate back to the `github-action` repository.
@@ -464,13 +456,13 @@ Optimizing workflow performance by caching dependencies can significantly improv
 
       ![](../media/security.png)
 
-1. You will be navigated to the **Code security and analysis** page, click on the **Enable** button for **Private vulnerability reporting**, **Dependabot alerts**, **Dependabot security updates**, and **Dependabot on Actions runners**.
+1. You will be navigated to the **Advanced Security** page, click on the **Enable** button for **Private vulnerability reporting**, **Dependabot alerts**, **Dependabot security updates**, and **Dependabot on Actions runners**.
 
-      ![](../media/enable.png)
+      ![](../media/enablea.png)
 
 1. Click on the **Set up** **(1)** button to enable **CodeQL analysis**, and select the **Advanced** **(2)** option for creating a **CodeQL Analysis YAML file**.
 
-     ![](../media/2dgn169.png)      
+     ![](../media/2dgn169a.png)      
 
 1. Update the workflow name to **codeql-analysis.yml** **(1)** and review the YAML file. Select **Commit changes** **(2)**.
 
@@ -488,13 +480,13 @@ Optimizing workflow performance by caching dependencies can significantly improv
    
      ![](../media/21-06-2024(23).png)
   
-1. You'll be navigated to the **Code scanning** section. Here, you'll be able to visualize the **No code scanning alerts here!** message.
+1. You'll be navigated to the **Code scanning** section. Here, you'll be able to visualize the alerts messages generated by codeql.
 
-     ![](../media/21-06-2024(24).png)
+     ![](../media/21-06-202424.png)
    
-1. Go to the **Settings** option. Click on the **Code security** button. Now, scroll down to **Push protection** and click on **Enable**.
+1. Go to the **Settings** option. Click on the **Advanced Security** button. Now, scroll down to **Push protection** and click on **Enable**.
 
-     ![Picture1](../media/code_security_1.png)
+     ![Picture1](../media/code_security_1a.png)
 
      ![Picture1](../media/push_1.png)
 
@@ -591,6 +583,13 @@ Optimizing workflow performance by caching dependencies can significantly improv
 1. In the **Commit changes** pop-up window, click on the **Commit changes** button.
 
      ![](../media/ExampleScript-commit.png)
+
+>**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
+
+<validation step="4c2f79e2-cb6f-4f65-bfc3-044a87a12b32" />
 
 ### Summary
 
