@@ -25,11 +25,11 @@ OpenID Connect (OIDC) allows your GitHub Actions workflows to access resources i
 
 1. On the **Add a credential** page, fill out the following details:  
 
-    - **Federated credential scenario**: Select **GitHub Actions deploying Azure resources (1)**  
-    - **Organization**: Provide the **Github Username (2) **  
-    - **Repository**: Provide the Repository name, that is **github-action** **(3)**  
-    - **Entity type**: Select **Branch (4)** 
-    - **Based on selection**: Type **main (5)**  
+    - **Federated credential scenario**: Select **GitHub Actions deploying Azure resources (1)**.
+    - **Organization**: Provide the **GitHub Username (2)**, which is **github-cloudlabsuser-XXX**. Verify that there are no underscores ("_") in the GitHub username.
+    - **Repository**: Provide the Repository name, that is **github-action** **(3)**. 
+    - **Entity type**: Select **Branch (4)**.
+    - **Based on selection**: Type **main (5)**.  
 
     ![](../media/E5-S5.png)  
 
