@@ -41,19 +41,25 @@ OpenID Connect (OIDC) allows your GitHub Actions workflows to access resources i
 
    ![](../media/E5-S7.png)  
 
-1. Provide the **Name** as **AZURE_CLIENT_ID (1)** and enter the **Azure Client ID (Application ID)** **(2)** in the **Secret** section from the **Environment Details Page** of the lab. Click on **Add Secret** (3).  
+1. To add repository secrets, go to the **Environment tab (1)** in the lab. Under **Service Principal Details (2)**, copy the values of **Application ID (3)**, **Tenant ID (4)**, and **Subscription ID (4)** for use in the next step.
 
-   ![](../media/E5-S8.png)  
+    ![](../media/E5-S12.png)  
 
-1. Now, add two other repository secrets as mentioned below:  
+1. Now, add the repository secrets as mentioned below:  
 
-    - Provide the **Name** as **AZURE_TENANT_ID (1)** and enter the **Tenant ID (Directory ID)** **(2)** in the **Secret** section from the **Environment Details Page** of the lab.  
+    - Provide the **Name** as **AZURE_CLIENT_ID (1)** and paste the **Application ID (2)** you copied previously from the Environment tab. Click on **Add Secret (3)**.
+
+      ![](../media/E5-S8.png)  
+
+    - Provide the **Name** as **AZURE_TENANT_ID (1)** and paste the **Tenant ID (Directory ID) (2)** you copied previously from the Environment tab. Click on **Add Secret** (3).  
 
       ![](../media/E5-S9.png)  
 
-    - Provide the **Name** as **AZURE_SUBSCRIPTION_ID (1)** and enter the **Subscription ID** **(2)** in the **Secret** section from the **Environment Details Page** of the lab.  
+    - Provide the **Name** as **AZURE_SUBSCRIPTION_ID (1)** and paste the **Subscription ID** **(2)** you previously earlier from the Environment tab. Click on **Add Secret** (3).  
 
       ![](../media/E5-S10.png)  
+
+ * **Note:** Make sure to verify the values entered for each repository secret.
 
 1. Navigate to the **Code** **(1)** option and click on the **.github/workflows** **(2)** folder.
 
