@@ -1,5 +1,7 @@
 # Lab 4: GitHub Environment
 
+### Estimated Duration : 60 mins
+
 ## Overview
 
 GitHub environments are a feature in GitHub Actions that allow you to define and manage different deployment environments, such as development, staging, and production. Environments can include protection rules like required reviewers, wait times, and environment-specific secrets to enhance security and control. This feature helps ensure that deployments are carried out in a controlled and consistent manner, providing safeguards and configurable policies for each stage of your deployment process.
