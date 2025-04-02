@@ -21,12 +21,11 @@ In this task, you'll learn to create a GitHub repository.
 
 1. To retrieve the **Device Verification Code**, use your existing credentials. Begin by opening a private browsing window and navigating to ```https://www.outlook.com/```. Click on **Sign In** from the top right corner. Enter the same username and password you used to log into your GitHub account. Once logged in, locate the **verification code** displayed on the screen. **Copy** this code and then **paste** it into the **Device Verification** section where prompted. This ensures you can securely complete the device verification process using the credentials associated with your GitHub account.
 
+   ![](../media/E5-S15.png)
+
    ![](../media/2dgn154.png) 
 
    >**Note:** In case you're prompted with Two factor authentication, please click on **Remind me Tomorrow**.
-
-
-      ![](../media/E5-S15.png)
 
       ![](../media/action15.png) 
 
