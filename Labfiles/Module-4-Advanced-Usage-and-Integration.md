@@ -37,7 +37,7 @@ OpenID Connect (OIDC) allows your GitHub Actions workflows to access resources i
 
     ![](../media/E5-S5.png)  
 
-1. Now, provide the **Name** as **OIDCCreds** (1) and click **Add** (2).  
+1. Now, provide the **Name** as **OIDCCreds** **(1)** and click **Add** **(2)**.  
 
    ![](../media/E5-S6.png)  
 
