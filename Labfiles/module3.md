@@ -1,6 +1,6 @@
 # Lab 3: Advanced Workflows
 
-### Estimated Duration : 60 mins
+### Estimated Duration : 120 mins
 
 ## Overview
 
