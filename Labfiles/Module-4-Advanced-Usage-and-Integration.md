@@ -209,7 +209,7 @@ In this task, you'll analyze and resolve an error with the workflow.
 
 4. In the **Commit changes** pop-up window, click on the **Commit changes** option.
 
-5. Click on the **Action** tab. Verify if the workflow has Failed, and click on the **Create deploy-to-azure.yml** workflow.
+5. Click on the **Action** tab. Select **Debugging and Monitoring workflow** from the left , verify if the workflow has Failed, and click on the **Create deploy-to-azure.yml** workflow.
 
       ![](../media/action-issue-check_1(1).png)
 
