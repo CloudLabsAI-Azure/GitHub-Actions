@@ -1,5 +1,7 @@
 # Lab 5: Security and Best Practices
 
+### Estimated Duration : 60 mins
+
 ## Lab Objectives
 
 - Task 1: OIDC to Securely Connect to the Cloud
