@@ -37,7 +37,7 @@ OpenID Connect (OIDC) allows your GitHub Actions workflows to access resources i
 
    ![](../media/E5-S6.png)  
 
-1. Navigate back to the **github-action** repository, click on **Settings** **(1)**, select **Actions** **(2)** under **Secrets and variables**, and click on **New Repository Secret** **(3)**.  
+1. Navigate back to the **github-action** repository, click on **Settings** **(1)**, expand the **Secrets and variables** dropdown, select **Actions** **(2)**, and click on **New Repository Secret** **(3)**.  
 
    ![](../media/E5-S7.png)  
 
