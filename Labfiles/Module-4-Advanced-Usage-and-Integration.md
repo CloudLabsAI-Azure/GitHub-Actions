@@ -71,33 +71,34 @@ OpenID Connect (OIDC) allows your GitHub Actions workflows to access resources i
 
 1. Provide the file name as **OIDC_action.yml** **(1)**. In the editor, **copy and paste** **(2)** the below script, and click on **Commit changes** **(3)**.
 
-     ```
-        # File: .github/workflows/workflow.yml
+    ```
+     # File: .github/workflows/workflow.yml
+   
+      name: Run Azure Login with OIDC
+      on: [push]
+      
+      permissions:
+        id-token: write
+        contents: read
+      jobs:
+        build-and-deploy:
+          runs-on: ubuntu-latest
+          steps:
+            - name: Azure login
+              uses: azure/login@v2
+              with:
+                client-id: ${{ secrets.AZURE_CLIENT_ID }}
+                tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+                subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+      
+            - name: Azure CLI script
+              uses: azure/cli@v2
+              with:
+                azcliversion: latest
+                inlineScript: |
+                  az account show
 
-         name: Run Azure Login with OIDC
-         on: [push]
-         
-         permissions:
-           id-token: write
-           contents: read
-         jobs:
-           build-and-deploy:
-             runs-on: ubuntu-latest
-             steps:
-               - name: Azure login
-                 uses: azure/login@v2
-                 with:
-                   client-id: ${{ secrets.AZURE_CLIENT_ID }}
-                   tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-                   subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
-         
-               - name: Azure CLI script
-                 uses: azure/cli@v2
-                 with:
-                   azcliversion: latest
-                   inlineScript: |
-                     az account show
-     ```
+    ```
  
    ![](../media/E5-S11.png)   
 
@@ -108,10 +109,8 @@ OpenID Connect (OIDC) allows your GitHub Actions workflows to access resources i
 1. Select **build-and-deploy (1)** and **verify** **(2)** that all the jobs have run successfully.  
 
    ![](../media/E5-S14.png)  
-
-
     
-   >**Note**: This GitHub Actions workflow demonstrates the best practice of securely using Azure secrets by employing GitHub Secrets. The workflow, triggered on every push, runs on ubuntu-latest and performs several steps, including logging into Azure with a service principal secret, executing an Azure CLI script, and running an Azure PowerShell script.
+   >**Note**: This GitHub Actions workflow automates authentication to Azure using OpenID Connect (OIDC) and executes an Azure CLI command to display the authenticated account details. It runs on every push event and uses repository secrets to securely authenticate.
 
 >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
