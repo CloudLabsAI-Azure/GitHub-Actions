@@ -69,7 +69,7 @@ OpenID Connect (OIDC) allows your GitHub Actions workflows to access resources i
 
 1. Provide the file name as **OIDC_action.yml** **(1)**. In the editor, **copy and paste** **(2)** the below script, and click on **Commit changes** **(3)**.
 
-    ```
+     ```
         # File: .github/workflows/workflow.yml
 
          name: Run Azure Login with OIDC
@@ -95,7 +95,7 @@ OpenID Connect (OIDC) allows your GitHub Actions workflows to access resources i
                    azcliversion: latest
                    inlineScript: |
                      az account show
-    ```
+     ```
  
    ![](../media/E5-S11.png)   
 
