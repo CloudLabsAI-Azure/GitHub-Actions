@@ -45,17 +45,17 @@ OpenID Connect (OIDC) allows your GitHub Actions workflows to access resources i
 
    ![](../media/E5-S7.png)  
 
-1. Provide the **Name** as **AZURE_CLIENT_ID (1)** and enter the **Azure Client ID (Application ID)** **(2)** in the **Secrets** section from the **Environment Details Page** of the lab. Click on **Add Secret** (3).  
+1. Provide the **Name** as **AZURE_CLIENT_ID (1)** and enter the **Azure Client ID (Application ID)** **(2)** in the **Secret** section from the **Environment Details Page** of the lab. Click on **Add Secret** (3).  
 
    ![](../media/E5-S8.png)  
 
 1. Now, add two other repository secrets as mentioned below:  
 
-    - Provide the **Name** as **AZURE_TENANT_ID (1)** and enter the **Tenant ID (Directory ID)** **(2)** in the **Secrets** section from the **Environment Details Page** of the lab.  
+    - Provide the **Name** as **AZURE_TENANT_ID (1)** and enter the **Tenant ID (Directory ID)** **(2)** in the **Secret** section from the **Environment Details Page** of the lab.  
 
       ![](../media/E5-S9.png)  
 
-    - Provide the **Name** as **AZURE_SUBSCRIPTION_ID (1)** and enter the **Subscription ID** **(2)** in the **Secrets** section from the **Environment Details Page** of the lab.  
+    - Provide the **Name** as **AZURE_SUBSCRIPTION_ID (1)** and enter the **Subscription ID** **(2)** in the **Secret** section from the **Environment Details Page** of the lab.  
 
       ![](../media/E5-S10.png)  
 
