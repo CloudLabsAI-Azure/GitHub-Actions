@@ -1,5 +1,7 @@
 # Getting Started with GitHub (Optional: Read-Only)
 
+### Estimated Duration : 45 mins
+
 ### What is GitHub? 
 
 **GitHub** is a cloud-based platform that uses Git, a distributed version control system, at its core. The GitHub platform simplifies the process of collaborating on projects and provides a website, command-line tools, and overall flow that allows developers and users to work together.
