@@ -55,7 +55,7 @@ OpenID Connect (OIDC) allows your GitHub Actions workflows to access resources i
 
       ![](../media/E5-S9.png)  
 
-    - Provide the **Name** as **AZURE_SUBSCRIPTION_ID (1)** and paste the **Subscription ID** **(2)** you previously earlier from the Environment tab. Click on **Add Secret** (3).  
+    - Provide the **Name** as **AZURE_SUBSCRIPTION_ID (1)** and paste the **Subscription ID** **(2)** you copied previously from the Environment tab. Click on **Add Secret** (3).  
 
       ![](../media/E5-S10.png)  
 
