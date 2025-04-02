@@ -11,21 +11,53 @@
 
 OpenID Connect (OIDC) allows your GitHub Actions workflows to access resources in Azure without needing to store the Azure credentials as long-lived GitHub secrets. This gives an overview of how to configure Azure to trust GitHub's OIDC as a federated identity and includes a workflow example for the Azure/Login action that uses tokens to authenticate to Azure and access resources.
 
-   ![](../media/E5-S1-S1.png)
-   ![](../media/E5-S1.png)
-   ![](../media/E5-S2.png)
-   ![](../media/E5-S3.png)
-   ![](../media/E5-S4.png)
-   ![](../media/E5-S5.png)
-   ![](../media/E5-S6.png)
-   ![](../media/E5-S7.png)
-   ![](../media/E5-S8.png)
-   ![](../media/E5-S9.png)
-   ![](../media/E5-S10.png)
-   ![](../media/E5-S11.png)
-   
+1. Navigate to the github-action repository. Select Settings(1), choose Environments (2) from the left panel and Copy the Environment Name (3) and paste it in a notepad for further use. 
 
-1. Navigate back to the `github-action` repository. 
+   ![](../media/E5-S1-S1.png)
+
+2. Go to the Azure portal and search for Entra ID and select it. 
+   ![](../media/E5-S1.png)
+
+3. On the Entra ID page, select App registrations under Manage in the left panel.
+   ![](../media/E5-S2.png)
+
+4. Now select All applications (1) and select https://odl_user_sp_
+   ![](../media/E5-S3.png)
+
+5. Now select Certificates and secrets (1) under Manage. Click on Federated credentials (2) and select + Add credential (3).
+   ![](../media/E5-S4.png)
+
+6. On the Add a credential page, fill out the following details: 
+
+    - Federated credential scenario : GitHub Actions deploying Azure resources (1)
+    - Organization : github_cloudlabsuser_049 (2)
+    - Repository : github-action (3)
+    - Entity type : Branch (4)
+    - Based on selection : main (5)
+ 
+    ![](../media/E5-S5.png)
+
+7. Now provide the Name as OIDCCreds (1) and Add(2).
+
+   ![](../media/E5-S6.png)
+
+8. Navigate back to the github-action repository, click on Settings (1), select Actions (2) under Secrets and variables. Click on  New Repository Secret (3). 
+
+   ![](../media/E5-S7.png)
+
+9. Provide the Name as AZURE_CLIENT_ID (1) and provide the Azure Client ID (Application ID) (2) in Secrets section from the Environment Details Page. Click on Add Secret (3).
+
+   ![](../media/E5-S8.png)
+
+10. Now, add two other repository secrets as mentioned below: 
+    
+    - Provide the Name as AZURE_TENANT_ID (1) and provide the Tenant ID (Directory ID) (2) in Secrets section from the Environment Details Page. 
+
+     ![](../media/E5-S9.png)
+
+   - Provide the Name as AZURE_SUBSCRIPTION_ID (1) and provide the Subscription ID (2) in Secrets section from the Environment Details Page. 
+
+     ![](../media/E5-S10.png)
 
 1. Navigate to the **Code** **(1)** option and click on the **.github/workflows** **(2)** folder.
 
@@ -38,13 +70,38 @@ OpenID Connect (OIDC) allows your GitHub Actions workflows to access resources i
 1. Provide the file name as **OIDC_action.yml** **(1)**. In the editor, **copy and paste** **(2)** the below script, and click on **Commit changes** **(3)**.
 
     ```
-    # File: .github/workflows/workflow.yml 
-        branches:
-          - main
-        paths:
-          - '.github/workflows/OIDC_action.yml'
+        # File: .github/workflows/workflow.yml
+
+         name: Run Azure Login with OIDC
+         on: [push]
+         
+         permissions:
+           id-token: write
+           contents: read
+         jobs:
+           build-and-deploy:
+             runs-on: ubuntu-latest
+             steps:
+               - name: Azure login
+                 uses: azure/login@v2
+                 with:
+                   client-id: ${{ secrets.AZURE_CLIENT_ID }}
+                   tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+                   subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+         
+               - name: Azure CLI script
+                 uses: azure/cli@v2
+                 with:
+                   azcliversion: latest
+                   inlineScript: |
+                     az account show
     ```
-    
+ 
+   ![](../media/E5-S11.png)   
+
+1. Now, select Actions and click on **Create OIDC_action.yml** workflow. 
+
+
     
    >**Note**: This GitHub Actions workflow demonstrates the best practice of securely using Azure secrets by employing GitHub Secrets. The workflow, triggered on every push, runs on ubuntu-latest and performs several steps, including logging into Azure with a service principal secret, executing an Azure CLI script, and running an Azure PowerShell script.
 
