@@ -15,11 +15,11 @@ A GitHub repository (repo) is a central location where the files for a project a
 
 In this task, you'll learn to create a GitHub repository.
 
-1. Select **Microsoft Edge** from the desktop, open a new browser tab and navigate to the GitHub login page at ```https://www.github.com/login```. From **Environment Details** page **(1)**, navigate to the **Licenses** **(2)** tab and **copy** **(3)** the credentials. Use the same username and password to log into GitHub.
+1. Select **Microsoft Edge** from the desktop, open a new browser tab and navigate to the GitHub login page at ```https://www.github.com/login```.From **Environment Details** page **(1)**, navigate to the **Licenses** **(2)** tab and **copy** **(3)** the credentials. Use the same username and password to log into GitHub.
 
    ![](../media/ga10.png) 
 
-1. To retrieve the **Device Verification Code**, use your existing credentials. Begin by opening a private browsing window and navigating to ```[http://outlook.office.com/](https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=174&ct=1743505558&rver=7.5.2211.0&wp=MBI_SSL&wreply=https%3a%2f%2foutlook.live.com%2fowa%2f%3fnlp%3d1%26cobrandid%3dab0455a0-8d03-46b9-b18b-df2f57b9e44c%26deeplink%3dowa%252f%26RpsCsrfState%3d4fed6d45-b7a2-aa43-b640-f97188ea3a60&id=292841&aadredir=1&CBCXT=out&lw=1&fl=dob%2cflname%2cwld&cobrandid=ab0455a0-8d03-46b9-b18b-df2f57b9e44c)``` Enter the same username and password you used to log into your GitHub account. Once logged in, locate the **verification code** displayed on the screen. **Copy** this code and then **paste** it into the **Device Verification** section where prompted. This ensures you can securely complete the device verification process using the credentials associated with your GitHub account.
+1. To retrieve the **Device Verification Code**, use your existing credentials. Begin by opening a private browsing window and navigating to ```https://www.outlook.com/```. Click on **Sign In** from the top right corner. Enter the same username and password you used to log into your GitHub account. Once logged in, locate the **verification code** displayed on the screen. **Copy** this code and then **paste** it into the **Device Verification** section where prompted. This ensures you can securely complete the device verification process using the credentials associated with your GitHub account.
 
    ![](../media/2dgn154.png) 
 
