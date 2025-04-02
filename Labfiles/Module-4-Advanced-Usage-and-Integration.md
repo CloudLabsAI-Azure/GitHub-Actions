@@ -19,7 +19,7 @@ OpenID Connect (OIDC) allows your GitHub Actions workflows to access resources i
   
    ![](../media/E5-S2.png)  
 
-1. Select **All applications (1)** and then choose **`https://odl_user_sp_`** **(2)**.  
+1. Select **All applications (1)** and then choose **https://odl_user_sp_<inject key="DeploymentID" enableCopy="false"/> (2)**.  
 
    ![](../media/E5-S3.png)  
 
