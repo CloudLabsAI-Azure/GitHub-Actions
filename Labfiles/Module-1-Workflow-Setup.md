@@ -1,5 +1,7 @@
 # Lab 1: Workflow Setup 
 
+### Estimated Duration : 60 mins
+
 ## Overview
 
 A GitHub repository (repo) is a central location where the files for a project are stored and managed using Git, a version control system. A repository contains all the project's files, including code, documentation, and other assets, along with a history of all changes made to those files.
@@ -15,11 +17,13 @@ A GitHub repository (repo) is a central location where the files for a project a
 
 In this task, you'll learn to create a GitHub repository.
 
-1. Select **Microsoft Edge** from the desktop, open a new browser tab and navigate to the GitHub login page at ```https://www.github.com/login```. From **Environment Details** page **(1)**, navigate to the **Licenses** **(2)** tab and **copy** **(3)** the credentials. Use the same username and password to log into GitHub.
+1. Select **Microsoft Edge** from the desktop, open a new browser tab and navigate to the GitHub login page at ```https://www.github.com/login```.From **Environment Details** page **(1)**, navigate to the **Licenses** **(2)** tab and **copy** **(3)** the credentials. Use the same username and password to log into GitHub.
 
    ![](../media/ga10.png) 
 
-1. To retrieve the **Device Verification Code**, use your existing credentials. Begin by opening a private browsing window and navigating to ```http://outlook.office.com/``` Enter the same username and password you used to log into your GitHub account. Once logged in, locate the **verification code** displayed on the screen. **Copy** this code and then **paste** it into the **Device Verification** section where prompted. This ensures you can securely complete the device verification process using the credentials associated with your GitHub account.
+1. To retrieve the **Device Verification Code**, use your existing credentials. Begin by opening a private browsing window and navigating to ```https://www.outlook.com/```. Click on **Sign In** from the top right corner. Enter the same username and password you used to log into your GitHub account. Once logged in, locate the **verification code** displayed on the screen. **Copy** this code and then **paste** it into the **Device Verification** section where prompted. This ensures you can securely complete the device verification process using the credentials associated with your GitHub account.
+
+   ![](../media/E5-S15.png)
 
    ![](../media/2dgn154.png) 
 

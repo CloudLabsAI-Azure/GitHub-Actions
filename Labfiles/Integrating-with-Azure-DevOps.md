@@ -1,5 +1,7 @@
 # Lab 6: Integrating with Azure DevOps
 
+### Estimated Duration : 60 mins
+
 ## Overview
 
 Azure Boards is a powerful tool within the Azure DevOps suite designed to help teams plan, track, and manage their work. Integrating Azure Boards with GitHub can significantly enhance project management by linking development activities with planning and tracking workflows. Here's how this integration can benefit your team and the steps to set it up:

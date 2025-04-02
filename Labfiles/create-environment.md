@@ -1,5 +1,7 @@
 # Lab 4: GitHub Environment
 
+### Estimated Duration : 60 mins
+
 ## Overview
 
 GitHub environments are a feature in GitHub Actions that allow you to define and manage different deployment environments, such as development, staging, and production. Environments can include protection rules like required reviewers, wait times, and environment-specific secrets to enhance security and control. This feature helps ensure that deployments are carried out in a controlled and consistent manner, providing safeguards and configurable policies for each stage of your deployment process.
@@ -79,11 +81,11 @@ In this task, you'll set up a GitHub environment and use it as a GitHub action.
 
    - Provide the name as **REGISTRY_NAME (1)**, paste the **value (2)** you copied from in earlier steps, and click on **Add Variable (3)**.
 
-     ![](../media/env40a.png)
+     ![](../media/E4-S1-P1.png)
 
    - Similarly, click again on the **Add environment variable**. Provide the name as **LOGIN_SERVER (1)** and paste the **login server value (2)** copied in earlier steps. Finally, click on **Add varianble (3)**.
 
-     ![](../media/env41a.png)
+     ![](../media/E4-S1-P2.png)
 
    - Please make sure that you've completed all the steps for creating a GitHub Environment. 
 

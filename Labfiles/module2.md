@@ -1,5 +1,7 @@
 # Lab 2: Action Integration
 
+### Estimated Duration : 60 mins
+
 ## Overview
 
 Integrating Azure with GitHub Actions provides a seamless and efficient way to automate your workflows and deploy applications directly to Azure from your GitHub repository. GitHub Actions, a powerful automation tool, enables continuous integration and continuous deployment (CI/CD) pipelines, allowing you to build, test, and deploy your code with ease.
