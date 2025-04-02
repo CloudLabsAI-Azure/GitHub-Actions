@@ -11,10 +11,6 @@
 
 OpenID Connect (OIDC) allows your GitHub Actions workflows to access resources in Azure without needing to store the Azure credentials as long-lived GitHub secrets. This gives an overview of how to configure Azure to trust GitHub's OIDC as a federated identity and includes a workflow example for the Azure/Login action that uses tokens to authenticate to Azure and access resources.
 
-1. Navigate to the GitHub Actions repository. Select **Settings** (1), choose **Environments** (2) from the left panel, and copy the **Environment Name** (3). Paste it into a notepad for further use.  
-
-   ![](../media/E5-S1-S1.png)  
-
 1. Go to the Azure portal, search for **Entra ID (1)**, and select it (2).  
 
    ![](../media/E5-S1.png)  
