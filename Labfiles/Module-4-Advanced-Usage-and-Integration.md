@@ -101,7 +101,14 @@ OpenID Connect (OIDC) allows your GitHub Actions workflows to access resources i
  
    ![](../media/E5-S11.png)   
 
-1. Now, select **Actions** and click on **Create OIDC_action.yml** workflow. 
+1. Now, click on **Actions** **(1)**, then select **Run Azure Login with OIDC** **(2)** and click on **Create OIDC_action.yml** **(3)** workflow.  
+
+   ![](../media/E5-S13.png)  
+
+1. Select **build-and-deploy (1)** and **verify** **(2)** that all the jobs have run successfully.  
+
+   ![](../media/E5-S14.png)  
+
 
     
    >**Note**: This GitHub Actions workflow demonstrates the best practice of securely using Azure secrets by employing GitHub Secrets. The workflow, triggered on every push, runs on ubuntu-latest and performs several steps, including logging into Azure with a service principal secret, executing an Azure CLI script, and running an Azure PowerShell script.
