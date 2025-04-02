@@ -1,5 +1,7 @@
 # Lab 1: Workflow Setup 
 
+### Estimated Duration : 60 mins
+
 ## Overview
 
 A GitHub repository (repo) is a central location where the files for a project are stored and managed using Git, a version control system. A repository contains all the project's files, including code, documentation, and other assets, along with a history of all changes made to those files.
