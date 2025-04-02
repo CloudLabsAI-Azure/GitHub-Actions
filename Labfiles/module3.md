@@ -1,5 +1,7 @@
 # Lab 3: Advanced Workflows
 
+### Estimated Duration : 60 mins
+
 ## Overview
 
 In this lab, you'll learn about reusable workflows and matrix builds.
